@@ -1,6 +1,30 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+  font-family: 'HannaTTF';
+  src: url('/fonts/BM\ HANNA_TTF\ Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BigShoulders';
+  src: url('/fonts/BigShouldersText-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArchivBlack';
+  src: url('/fonts/ArchivoBlack-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 :root {
   margin: 0; 
@@ -8,5 +32,5 @@
 }
 
 body {
-  background-color: #E2FFF1; 
+  background-color: #DDFDFF; 
 }
