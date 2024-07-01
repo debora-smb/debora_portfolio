@@ -1,0 +1,11 @@
+.nav{
+    writing-mode: vertical-rl;
+}
+
+.nav a{
+    transition: text-decoration 50s ease;
+}
+
+.nav a:hover{
+ text-decoration: line-through;
+}
