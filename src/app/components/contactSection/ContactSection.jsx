@@ -1,7 +1,7 @@
 "use client";
 import { useRef } from "react";
-import styles from "./mainContact.module.css";
-import emailjs from "@emailjs/browser";
+import styles from "./ContactSection.module.css";
+import emailjs from "@emailjs/browser"
 import Image from "next/image";
 
 export default function ContactSection() {
@@ -65,21 +65,21 @@ export default function ContactSection() {
           <Image
             height={150}
             width={120}
-            src="/img/rubber-duck"
+            src="/img/rubber-duck.webp"
             alt="3d Rubber duck"
             className={`${styles.duck} opacity-50`}
           />
           <Image
             height={150}
             width={120}
-            src="/img/rubber-duck"
+            src="/img/rubber-duck.webp"
             alt="3d Rubber duck"
             className={`${styles.duck} opacity-50`}
           />
           <Image
             height={150}
             width={120}
-            src="/img/rubber-duck"
+            src="/img/rubber-duck.webp"
             alt="3d Rubber duck"
             className={`${styles.duck} opacity-50`}
           />
