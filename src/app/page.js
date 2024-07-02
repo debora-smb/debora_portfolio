@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Header from "./components/header/header";
 import VideoSection from "./components/videoSection/VideoSection";
+import ContactSection from "./components/contactSection/ContactSection";
 
 
 export default function SinglePageApp() {
@@ -16,6 +17,7 @@ export default function SinglePageApp() {
       <Header lightOn={lightOn} switchLightOn={switchLightOn}/>
       <main>
         <VideoSection />
+        <ContactSection />
       </main>
     </>
 
