@@ -18,6 +18,7 @@ module.exports = {
         yellow: '#f8b500',
         grey: '#5c636e',
         greyText: '#313131a2',
+        blackOverlay: 'rgba(0, 0, 0, 0.55)',
       }
     },
   },

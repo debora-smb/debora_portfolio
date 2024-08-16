@@ -8,7 +8,7 @@ export default function ContactSection() {
   return (
 
     <div
-      className="h-[100vh] w-[90vw] pl-[5vw] flex items-center justify-between bg-black"
+      className="h-[100vh] w-[100vw] lg:w-[90vw] pl-[5vw] flex items-center justify-between bg-black"
       id="contact"
     >
       <div className="text-white text-[180px] leading-[200px] w-[45%]">

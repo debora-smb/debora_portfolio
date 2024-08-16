@@ -1,9 +1,5 @@
 /* HEADER  */
 
-.nav{
-    writing-mode: vertical-rl;
-}
-
 .nav a{
     transition: text-decoration 50s ease;
 }
@@ -12,6 +8,11 @@
  text-decoration: line-through;
 }
 
+@media (min-width: 1024px){
+    .nav{
+        writing-mode: vertical-rl;
+    }
+}
 
 
 /* LOADER  */
