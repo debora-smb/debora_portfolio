@@ -7,6 +7,7 @@ import HeaderDesktop from "./components/atoms/HeaderDesktop";
 import HeaderMobile from "./components/atoms/HeaderMobile";
 import ScrollCircle from "./components/atoms/Scroll";
 import ProjectsSection from "./components/organisms/ProjectsSection";
+import SkillsSection from "./components/organisms/SkillsSection";
 
 
 export default function SinglePageApp() {
@@ -42,6 +43,7 @@ export default function SinglePageApp() {
             </div>
           </div>
           <ProjectsSection />
+          <SkillsSection />
           <ContactSection />
         </div>
       </main >

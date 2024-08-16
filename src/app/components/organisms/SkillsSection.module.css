@@ -1,0 +1,34 @@
+.barscontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 100vh;
+   
+  }
+
+  .barwrapper1 {
+    width: 60%;
+    background-color: #007bff;
+  }
+
+  .barwrapper {
+    width: 90%;
+    background-color: #007bff;
+  }
+  
+
+  .bar {
+    height: 40px;
+    width: 100%;
+    background-color: #007bff;
+    overflow: hidden;
+  }
+  
+
+  .barfill {
+    height: 100%;
+    width: 0;
+    background-color: yellow;
+    transition: width 0.3s ease-in-out;
+    height: 100%;
+  }
