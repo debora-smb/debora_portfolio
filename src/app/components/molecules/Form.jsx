@@ -1,6 +1,7 @@
 "use client";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser"
+import styles from "./Molecules.module.css"
 
 export default function Form() {
   const refForm = useRef();
@@ -19,37 +20,38 @@ export default function Form() {
   };
 
   return (
-        <form
-          onSubmit={handleSubmit}
-          ref={refForm}
-          className="flex flex-col gap-4 w-[100%]"
-        >
-          <input
-            name="name"
-            required
-            type="text"
-            className="h-[40px]"
-            placeholder="Name"
-          ></input>
-          <input
-            name="email"
-            required
-            type="email"
-            className="h-[40px]"
-            placeholder="Email"
-          ></input>
-          <textarea
-            name="message"
-            required
-            type="text"
-            className="h-[80px]"
-            placeholder="Message"
-          ></textarea>
-          <input
-            type="submit"
-            value="Send"
-            className="text-white text-lg uppercase p-2 border w-40 hover:bg-white hover:text-black"
-          ></input>
-        </form>
+    <form
+      onSubmit={handleSubmit}
+      ref={refForm}
+      className={`${styles.formulario} flex flex-col gap-8 w-[100%] font-avenir text-white`}
+    >
+      <input
+        name="name"
+        required
+        type="text"
+        className="h-[40px] bg-transparent border-b-[1px]"
+        placeholder="Name"
+      ></input>
+      <input
+        name="email"
+        required
+        type="email"
+        className="h-[40px] bg-transparent border-b-[1px]"
+        placeholder="Email"
+      ></input>
+      <textarea
+        name="message"
+        required
+        type="text"
+        className="h-[80px] bg-transparent border-b-[1px]"
+        placeholder="Message"
+      ></textarea>
+      <button
+        type="submit"
+        className={`${styles.contactButton} font-avenir border-[1px] border-white text-white text-center relative w-full md:w-32 p-2 tracking-widest uppercase`}
+      >
+        <span>SUBMIT</span>
+      </button>
+    </form>
   );
 }

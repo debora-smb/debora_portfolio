@@ -1,0 +1,48 @@
+/* CONTACT FORM */
+
+.formulario input::placeholder,
+.formulario textarea::placeholder{
+   color: white !important;
+}
+
+.formulario input,
+.formulario textarea{
+   outline:none;
+}
+
+ .contactButton span {
+   position: relative;
+   z-index: 3;
+ }
+ 
+ .contactButton::before {
+   content: "";
+   position: absolute;
+   top: 5px;
+   left: -2px;
+   width: calc(100% + 6px);
+   height: calc(100% - 10px);
+   background-color: #111;
+   transition: all 0.5s ease-in-out;
+   transform: scaleY(1);
+ }
+ 
+ .contactButton:hover::before {
+   transform: scaleY(0);
+ }
+ 
+ .contactButton::after {
+   content: "";
+   position: absolute;
+   left: 5px;
+   top: -5px;
+   width: calc(100% - 10px);
+   height: calc(100% + 10px);
+   background-color: #111;
+   transition: all 0.5s ease-in-out;
+   transform: scaleX(1);
+ }
+ 
+ .contactButton:hover::after {
+   transform: scaleX(0);
+ }

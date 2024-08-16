@@ -8,38 +8,42 @@ export default function ContactSection() {
   return (
 
     <div
-      className="h-[100vh] w-[100vw] lg:w-[90vw] pl-[5vw] flex items-center justify-between bg-black"
+      className="bg-black w-[100vw] lg:w-[90vw]"
       id="contact"
     >
-      <div className="text-white text-[180px] leading-[200px] w-[45%]">
-        <h2 className="font-avenir">SAY <span className="font-ivyPresto">HOLA</span></h2>
-      </div>
-      <aside className="w-[50%] flex flex-col">
-        <Form />
-        <div className="flex flex-row items-center justify-end gap-10">
-          <Image
-            height={150}
-            width={120}
-            src="/img/rubber-duck.webp"
-            alt="3d Rubber duck"
-            className={`${styles.duck} opacity-50`}
-          />
-          <Image
-            height={150}
-            width={120}
-            src="/img/rubber-duck.webp"
-            alt="3d Rubber duck"
-            className={`${styles.duck} opacity-50`}
-          />
-          <Image
-            height={150}
-            width={120}
-            src="/img/rubber-duck.webp"
-            alt="3d Rubber duck"
-            className={`${styles.duck} opacity-50`}
-          />
+      <div
+        className="innerContainer flex flex-col lg:flex-row h-[90vh] md:h-auto lg:h-[100vh]   items-center gap-16 lg:gap-0 lg:justify-between "
+      >
+        <div className="text-white text-[60px] md:text-[110px] xl:text-[180px] leading-[70px] md:leading-[110px] xl:leading-[200px] lg:w-[45%]">
+          <h2 className={`${styles.lineUp} font-avenir`} >SAY <span className="font-ivyPresto">HOLA</span></h2>
         </div>
-      </aside>
+        <aside className=" w-full lg:w-[55%] flex flex-col lg:pr-24 gap-22 lg:justify-center  justify-between h-full">
+          <Form />
+          <div className="flex flex-row items-center justify-between md:justify-end gap-10 ">
+            <Image
+              height={110}
+              width={80}
+              src="/img/rubber-duck.webp"
+              alt="3d Rubber duck"
+              className={`${styles.duck} opacity-50`}
+            />
+            <Image
+              height={110}
+              width={80}
+              src="/img/rubber-duck.webp"
+              alt="3d Rubber duck"
+              className={`${styles.duck} opacity-50`}
+            />
+            <Image
+              height={110}
+              width={80}
+              src="/img/rubber-duck.webp"
+              alt="3d Rubber duck"
+              className={`${styles.duck} opacity-50`}
+            />
+          </div>
+        </aside>
+      </div>
     </div>
   );
 }
