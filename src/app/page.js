@@ -6,6 +6,7 @@ import Loader from "./components/atoms/Loader";
 import HeaderDesktop from "./components/atoms/HeaderDesktop";
 import HeaderMobile from "./components/atoms/HeaderMobile";
 import ScrollCircle from "./components/atoms/Scroll";
+import ProjectsSection from "./components/organisms/ProjectsSection";
 
 
 export default function SinglePageApp() {
@@ -40,6 +41,7 @@ export default function SinglePageApp() {
             <div className="w-[200vw] h-[40vh] lg:h-[120vh] rounded-t-[70%] ml-[-60vw] flex justify-center pt-[20vh] bg-black">
             </div>
           </div>
+          <ProjectsSection />
           <ContactSection />
         </div>
       </main >
