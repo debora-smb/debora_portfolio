@@ -5,23 +5,16 @@
 
 
 @font-face {
-  font-family: 'HannaTTF';
-  src: url('/fonts/BM\ HANNA_TTF\ Regular.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'AvenirLight';
+  src: url('/fonts/Avenir-Light.ttf') format('truetype');
+  font-weight: light;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'BigShoulders';
-  src: url('/fonts/BigShouldersText-VariableFont_wght.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ArchivBlack';
-  src: url('/fonts/ArchivoBlack-Regular.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'IvyPrestoDisplay';
+  src: url('/fonts/Ivy-Presto-Display-Light.otf') format('opentype');
+  font-weight: italic;
   font-style: normal;
 }
 
@@ -32,5 +25,36 @@
 }
 
 body {
-  background-color: #000; 
+  background-color: #111; 
+}
+
+.videoSection {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+.contactSection {
+  position: relative;
+  top: 100vh;
+  height: 100vh;
+  width: 90vw;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.innerContainer{
+  padding-left: 5vw;
+}
+  
+@media (min-width:1536px){
+
+  .innerContainer{
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
 }
