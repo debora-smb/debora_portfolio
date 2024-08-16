@@ -1,11 +1,11 @@
 "use client"
-import Header from "./components/atoms/HeaderDesktop";
 import VideoSection from "./components/organisms/VideoSection";
 import ContactSection from "./components/organisms/ContactSection";
 import { useEffect, useState } from "react";
 import Loader from "./components/atoms/Loader";
 import HeaderDesktop from "./components/atoms/HeaderDesktop";
 import HeaderMobile from "./components/atoms/HeaderMobile";
+import ScrollCircle from "./components/atoms/Scroll";
 
 
 export default function SinglePageApp() {
@@ -14,20 +14,21 @@ export default function SinglePageApp() {
 
 
   useEffect(() => {
-      const timer = setTimeout(() => {
-          setLoading(false);
-      }, 2000);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
 
-      return () => clearTimeout(timer);
+    return () => clearTimeout(timer);
   }, []);
 
   if (loading) {
-      return <Loader />;
+    return <Loader />;
   }
 
 
   return (
     <>
+      <ScrollCircle />
       <HeaderDesktop />
       <HeaderMobile />
       <main>

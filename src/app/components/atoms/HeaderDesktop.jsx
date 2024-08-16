@@ -1,4 +1,5 @@
 import styles from './Atoms.module.css';
+import ScrollCircle from './Scroll';
 
 export default function HeaderDesktop(){
 
