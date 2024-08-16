@@ -1,9 +1,9 @@
-import styles from './header.module.css';
+import styles from './Atoms.module.css';
 
 export default function Header(){
 
   return (
-    <header className={` bg-[#111] h-[100vh] w-[10vw] flex items-center justify-center fixed right-0`}>
+    <header className={` bg-black h-[100vh] w-[10vw] flex items-center justify-center fixed right-0`}>
         <nav className={`text-white flex items-center justify-center flex-row gap-10 ${styles.nav}`}>
             <a href="/#about-me">ABOUT ME</a>
             <a href="/#projects">PROJECTS</a>
