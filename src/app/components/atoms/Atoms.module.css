@@ -15,6 +15,50 @@
 }
 
 
+
+/* BURGER  */
+
+.styledBurger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.styledBurger:focus {
+  outline: none;
+}
+
+.styledBurger div {
+  width: 2rem;
+  height: 0.25rem;
+  background: var(--burger-color);
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.styledBurger div:first-child {
+  transform: var(--burger-transform-first-child);
+}
+
+.styledBurger div:nth-child(2) {
+  opacity: var(--burger-opacity-second-child);
+  transform: var(--burger-transform-second-child);
+}
+
+.styledBurger div:nth-child(3) {
+  transform: var(--burger-transform-third-child);
+}
+
+
 /* LOADER  */
 
 .portfolioName {
@@ -40,16 +84,22 @@
 .circle {
     position: fixed; 
     bottom: 60px;
-    right: 120px; 
+    right: 60px; 
     width: 20px;
     height: 20px;
     border-radius: 50%; 
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 9000; 
+    z-index: 400; 
     background: transparent;
   }
+
+  @media (min-width:1024px){
+    .circle {
+      right: 120px; 
+  }
+}
   
   .text {
     position: absolute; 

@@ -4,7 +4,7 @@ import ContactSection from "./components/organisms/ContactSection";
 import { useEffect, useState } from "react";
 import Loader from "./components/atoms/Loader";
 import HeaderDesktop from "./components/atoms/HeaderDesktop";
-import HeaderMobile from "./components/atoms/HeaderMobile";
+import HeaderMobile from "./components/molecules/HeaderMobile";
 import ScrollCircle from "./components/atoms/Scroll";
 import ProjectsSection from "./components/organisms/ProjectsSection";
 import SkillsSection from "./components/organisms/SkillsSection";
@@ -13,7 +13,6 @@ import SkillsSection from "./components/organisms/SkillsSection";
 export default function SinglePageApp() {
 
   const [loading, setLoading] = useState(true);
-
 
   useEffect(() => {
     const timer = setTimeout(() => {

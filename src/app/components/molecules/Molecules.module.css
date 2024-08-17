@@ -46,3 +46,38 @@
  .contactButton:hover::after {
    transform: scaleX(0);
  }
+
+
+
+/* BURGER MENU */
+
+.styledMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #111;
+  height: 100vh;
+  text-align: center;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+.styledMenu a {
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s linear;
+  
+}
+
+.styledMenu a:hover {
+  color: #474747;
+}
