@@ -1,27 +1,34 @@
 import Image from "next/image";
 import styles from "./Molecules.module.css";
 
-export default function Menu({ open }) {
+
+export default function Menu({ open, setOpen }) {
+    const handleLinkClick = () => {
+        setOpen(false);
+    };
+
     return (
         <nav className={`${styles.styledMenu} font-avenir`} style={{ transform: open ? 'translateX(0)' : 'translateX(-100%)' }}>
-            <a href="/#about-me">ABOUT ME</a>
-            <a href="/#projects">PROJECTS</a>
-            <a href="/#skills">SKILLS</a>
-            <a href="/#contact">CONTACT</a>
+            <a href="/#about-me" onClick={handleLinkClick}>ABOUT ME</a>
+            <a href="/#projects" onClick={handleLinkClick}>PROJECTS</a>
+            <a href="/#skills" onClick={handleLinkClick}>SKILLS</a>
+            <a href="/#contact" onClick={handleLinkClick}>CONTACT</a>
             <div className={` mt-14 font-ivyPresto text-white flex flex-row items-center justify-center gap-8 h-12`}>
                 follow me
-                <a href="#">
+                <a href="https://github.com/debora-smb" target="_blank" rel="noopener noreferrer">
                     <Image
-                    width={25}
-                    height={25}
-                    src='/img/icon-github.svg'
+                        width={25}
+                        height={25}
+                        src='/img/icon-github.svg'
+                        alt="GitHub"
                     />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/debora-smenezes" target="_blank" rel="noopener noreferrer">
                     <Image
-                    width={25}
-                    height={25}
-                    src='/img/icon-linkedin.svg'
+                        width={25}
+                        height={25}
+                        src='/img/icon-linkedin.svg'
+                        alt="LinkedIn"
                     />
                 </a>
             </div>
