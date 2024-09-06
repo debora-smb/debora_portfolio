@@ -8,6 +8,7 @@ import HeaderMobile from "./components/molecules/HeaderMobile";
 import ScrollCircle from "./components/atoms/Scroll";
 import ProjectsSection from "./components/organisms/ProjectsSection";
 import SkillsSection from "./components/organisms/SkillsSection";
+import AboutMeSection from "./components/organisms/AboutMeSection";
 
 
 export default function SinglePageApp() {
@@ -41,9 +42,12 @@ export default function SinglePageApp() {
             <div className="w-[200vw] h-[40vh] lg:h-[120vh] rounded-t-[70%] ml-[-60vw] flex justify-center pt-[20vh] bg-black">
             </div>
           </div>
-          <ProjectsSection />
-          <SkillsSection />
-          <ContactSection />
+          <div className="w-full lg:w-[90vw] bg-black flex flex-col gap-[30vh] lg:gap-[30vh]">
+            <AboutMeSection />
+            <ProjectsSection />
+            <SkillsSection />
+            <ContactSection />
+          </div>
         </div>
       </main >
     </>

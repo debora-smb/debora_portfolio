@@ -67,7 +67,7 @@ export default function ProjectsSection() {
               height={410}
               alt="Laptop frame"
               src="/img/desktop_frame.webp"
-              className="relative z-2" />
+              className={`relative z-2 `} />
               
                <aside>
                 <h3 className="text-white">Pagina web</h3>

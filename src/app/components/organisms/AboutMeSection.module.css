@@ -1,0 +1,13 @@
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width:1024px){
+    .aboutContainer{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        align-items: center;
+    }
+}

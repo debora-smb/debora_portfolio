@@ -47,7 +47,11 @@ body {
 }
 
 .innerContainer{
-  padding: 5vw;
+  padding: 0vw 5vw 0vw 5vw;
+}
+
+.innerContainerNoPadding{
+  padding: 0vw 0vw 0vw 5vw;
 }
   
 
