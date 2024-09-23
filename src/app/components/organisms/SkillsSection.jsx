@@ -9,7 +9,7 @@ export default function SkillsSection() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (skillsRef.current) { 
+      if (skillsRef.current) {
         const rect = skillsRef.current.getBoundingClientRect();
 
         if (rect.top <= window.innerHeight && rect.bottom >= 0) {
@@ -18,7 +18,7 @@ export default function SkillsSection() {
           const scrollFraction = scrollHeight > 0 ? scrollTop / scrollHeight : 0;
 
           setScrollPosition1(Math.max(scrollFraction * 110, 1));
-          setScrollPosition2(Math.max(scrollFraction * 70, 1));
+          setScrollPosition2(Math.max(scrollFraction * 90, 1));
           setScrollPosition3(Math.max(scrollFraction * 60, 1));
         }
       }
@@ -34,76 +34,61 @@ export default function SkillsSection() {
   }, []);
 
   return (
-    <div ref={skillsRef} id="skills" className={`${styles.barscontainer} bg-[#111] px-[5vw] flex flex-row justify-center pb-[20vh]`}>
-      <div className="flex flex-row justify-between items-center">
-        <h2 className="font-avenir text-white text-[120px] leading-[200px] w-10 flex">SKILLS.</h2>
-        <div className={`${styles.barwrapper1}  h-[40px] mt-14`}>
-          <div className={styles.bar}>
-            <div
-              className={styles.barfill}
-              style={{ width: `${scrollPosition1}%` }}
-            ></div>
-          </div>
-        </div>
-      </div>
-      <section className="flex flex-col gap-8">
-        <div className="flex font-ivyPresto gap-12 items-center text-white justify-between">
-          <span>JAVASCRIPT</span>
-          <div className={styles.barwrapper}>
+      <div ref={skillsRef} id="skills" className={`${styles.barscontainer} innerContainer bg-[#111] px-[5vw] flex flex-row justify-center gap-4`}>
+        <div className="flex flex-row gap-8 items-center mb-2 lg:justify-between">
+          <h2 className="font-avenir text-white text-[50px] leading-[50px] flex md:text-[120px] md:leading-[120px]">SKILLS.</h2>
+          <div className={`${styles.barwrapper1} md:h-[40px] md:mt-14`}>
             <div className={styles.bar}>
               <div
                 className={styles.barfill}
-                style={{ width: `${scrollPosition2}%` }}
+                style={{ width: `${scrollPosition1}%` }}
               ></div>
             </div>
           </div>
         </div>
-        <div className="flex font-ivyPresto gap-12 items-center text-white justify-between">
-          <span>HTML5</span>
-          <div className={styles.barwrapper}>
-            <div className={styles.bar}>
-              <div
-                className={styles.barfill}
-                style={{ width: `${scrollPosition3}%` }}
-              ></div>
+        <section className="flex flex-col gap-8 w-full">
+          <div className="w-full">
+            <div className={styles.barwrapper}>
+              <div className={styles.bar}>
+                <div
+                  className={styles.barfill}
+                  style={{ width: `${scrollPosition2}%` }}
+                ></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="flex font-ivyPresto gap-12 items-center text-white justify-between">
+          <div className="flex font-ivyPresto gap-12 items-center text-white justify-between">
+            <div className={styles.barwrapper}>
+              <div className={styles.bar}>
+                <div
+                  className={styles.barfill}
+                  style={{ width: `${scrollPosition3}%` }}
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className={`${styles.technologies} flex font-avener text-[16px] leading-[16px] mt-8 gap-y-4 gap-x-6 items-center text-white justify-between flex-wrap md:mt-32 md:text-[30px] md:leading-[34px] md:gap-y-8 md:gap-x-12 lg:mt-8 lg:text-[24px] lg:leading-[28px] lg:gap-4  xl:gap-x-2 xl:mt-12 xl:gap-8 xl:text-[30px] xl:leading-[34px] 2xl:gap-8`}>
+          <span>HTML5</span> 
           <span>CSS3</span>
-          <div className={styles.barwrapper}>
-            <div className={styles.bar}>
-              <div
-                className={styles.barfill}
-                style={{ width: `${scrollPosition3}%` }}
-              ></div>
-            </div>
-          </div>
-        </div>
-        <div className="flex font-ivyPresto gap-12 items-center text-white justify-between">
+          <span>JAVASCRIPT ES6</span>
           <span>REACT</span>
-          <div className={styles.barwrapper}>
-            <div className={styles.bar}>
-              <div
-                className={styles.barfill}
-                style={{ width: `${scrollPosition3}%` }}
-              ></div>
-            </div>
-          </div>
-        </div>
-        <div className="flex font-ivyPresto gap-12 items-center text-white justify-between">
+          <span>NEXT JS</span>
+          <span>TAILWIND</span> 
+          <span>GIT VERSION CONTROL</span> 
+          <span>FIGMA</span>
+          <span>MySQL</span>
           <span>PHP</span>
-          <div className={styles.barwrapper}>
-            <div className={styles.bar}>
-              <div
-                className={styles.barfill}
-                style={{ width: `${scrollPosition3}%` }}
-              ></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </div>
+          <span>LARAVEL</span>
+          <span>WORDPRESS</span>
+          <span>ELEMENTOR</span> 
+          <span>TRELLO</span>
+          <span>SCRUM</span>
+          <span>KANBAN</span>
+          <span>TDD</span>
+          <span>SOLID</span>
+          <span>API Rest</span>
+        </section>
+      </div>
   );
 }

@@ -1,8 +1,7 @@
 .barscontainer {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    min-height: 100vh;
+    height: 100vh;
    
   }
 
@@ -12,7 +11,7 @@
   }
 
   .barwrapper {
-    width: 90%;
+    width: 100%;
     background-color: #5c636e;
   }
   
@@ -31,4 +30,8 @@
     background-color: #ffc115;
     transition: width 0.3s ease-in-out;
     height: 100%;
+  }
+
+  .technologies span:hover{
+color: #f8b500;
   }
