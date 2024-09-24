@@ -70,10 +70,6 @@
 
 /* Skills Section */
 
-.barfill {
-  transition: width 0.1s ease-in-out;
-}
-
 .technologies span:hover {
   color: #f8b500;
 }

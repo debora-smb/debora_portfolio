@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Organisms.module.css";
+import SkillsBar from "../atoms/SkillsBar";
+
 
 export default function SkillsSection() {
   const skillsRef = useRef(null);
@@ -34,61 +36,36 @@ export default function SkillsSection() {
   }, []);
 
   return (
-      <div ref={skillsRef} id="skills" className={`innerContainer bg-[#111] px-[5vw] flex flex-col h-[100vh] justify-center gap-4`}>
-        <div className="flex flex-row gap-8 items-center mb-2 lg:justify-between">
-          <h2 className="font-avenir text-white text-[50px] leading-[50px] flex md:text-[120px] md:leading-[120px]">SKILLS.</h2>
-          <div className={`w-[60%] bg-[#5c636e] md:h-[40px] md:mt-14`}>
-            <div className="h-[40px] w-full bg-[#445f8b] overflow-hidden">
-              <div
-                className={`${styles.barfill} h-full w-0 bg-[#ffc115]`}
-                style={{ width: `${scrollPosition1}%` }}
-              ></div>
-            </div>
-          </div>
-        </div>
-        <section className="flex flex-col gap-8 w-full">
-          <div className="w-full">
-            <div className="w-full bg-[#5c636e]">
-              <div className="h-[40px] w-full bg-[#445f8b] overflow-hidden">
-                <div
-                  className={`${styles.barfill} h-full w-0 bg-[#ffc115]`}
-                  style={{ width: `${scrollPosition2}%` }}
-                ></div>
-              </div>
-            </div>
-          </div>
-          <div className="w-full">
-            <div className="w-full bg-[#5c636e]">
-              <div className="h-[40px] w-full bg-[#445f8b] overflow-hidden">
-                <div
-                  className={`${styles.barfill} h-full w-0 bg-[#ffc115]`}
-                  style={{ width: `${scrollPosition3}%` }}
-                ></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className={`${styles.technologies} flex font-avener text-[16px] leading-[16px] mt-8 gap-y-4 gap-x-6 items-center text-white justify-between flex-wrap md:mt-32 md:text-[30px] md:leading-[34px] md:gap-y-8 md:gap-x-12 lg:mt-8 lg:text-[24px] lg:leading-[28px] lg:gap-4  xl:gap-x-2 xl:mt-12 xl:gap-8 xl:text-[30px] xl:leading-[34px] 2xl:gap-8`}>
-          <span>HTML5</span> 
-          <span>CSS3</span>
-          <span>JAVASCRIPT ES6</span>
-          <span>REACT</span>
-          <span>NEXT JS</span>
-          <span>TAILWIND</span> 
-          <span>GIT VERSION CONTROL</span> 
-          <span>FIGMA</span>
-          <span>MySQL</span>
-          <span>PHP</span>
-          <span>LARAVEL</span>
-          <span>WORDPRESS</span>
-          <span>ELEMENTOR</span> 
-          <span>TRELLO</span>
-          <span>SCRUM</span>
-          <span>KANBAN</span>
-          <span>TDD</span>
-          <span>SOLID</span>
-          <span>API Rest</span>
-        </section>
+    <div ref={skillsRef} id="skills" className={`innerContainer bg-[#111] px-[5vw] flex flex-col h-[100vh] justify-center gap-4`}>
+      <div className="flex flex-row gap-8 items-center mb-2 lg:justify-between">
+        <h2 className="font-avenir text-white text-[50px] leading-[50px] flex md:text-[120px] md:leading-[120px]">SKILLS.</h2>
+        <SkillsBar scrollPosition={scrollPosition1} />
       </div>
+      <section className="flex flex-col gap-8 w-full">
+        <SkillsBar scrollPosition={scrollPosition2} />
+        <SkillsBar scrollPosition={scrollPosition3} />
+      </section>
+      <section className={`${styles.technologies} flex font-avener text-[16px] leading-[16px] mt-8 gap-y-4 gap-x-6 items-center text-white justify-between flex-wrap md:mt-32 md:text-[30px] md:leading-[34px] md:gap-y-8 md:gap-x-12 lg:mt-8 lg:text-[24px] lg:leading-[28px] lg:gap-4  xl:gap-x-2 xl:mt-12 xl:gap-8 xl:text-[30px] xl:leading-[34px] 2xl:gap-8`}>
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JAVASCRIPT ES6</span>
+        <span>REACT</span>
+        <span>NEXT JS</span>
+        <span>TAILWIND</span>
+        <span>GIT VERSION CONTROL</span>
+        <span>FIGMA</span>
+        <span>MySQL</span>
+        <span>PHP</span>
+        <span>LARAVEL</span>
+        <span>WORDPRESS</span>
+        <span>ELEMENTOR</span>
+        <span>TRELLO</span>
+        <span>SCRUM</span>
+        <span>KANBAN</span>
+        <span>TDD</span>
+        <span>SOLID</span>
+        <span>API Rest</span>
+      </section>
+    </div>
   );
 }

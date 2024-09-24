@@ -1,17 +1,17 @@
 /* HEADER  */
 
-.nav a{
-    transition: text-decoration 50s ease;
+.nav a {
+  transition: text-decoration 50s ease;
 }
 
-.nav a:hover{
- text-decoration: line-through;
+.nav a:hover {
+  text-decoration: line-through;
 }
 
-@media (min-width: 1024px){
-    .nav{
-        writing-mode: vertical-rl;
-    }
+@media (min-width: 1024px) {
+  .nav {
+    writing-mode: vertical-rl;
+  }
 }
 
 
@@ -62,19 +62,20 @@
 /* LOADER  */
 
 .portfolioName {
-    animation: fadeInOut 1s ease-in-out;
-    -webkit-text-stroke:#111;
+  animation: fadeInOut 1s ease-in-out;
+  -webkit-text-stroke: #111;
 }
 
 
 @keyframes fadeInOut {
-    0% {
-        opacity: 0;
-    
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 
@@ -82,55 +83,64 @@
 /* SCROLL */
 
 .circle {
-    position: fixed; 
-    bottom: 60px;
-    right: 60px; 
-    width: 20px;
-    height: 20px;
-    border-radius: 50%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 400; 
-    background: transparent;
-  }
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 400;
+  background: transparent;
+}
 
-  @media (min-width:1024px){
-    .circle {
-      right: 120px; 
+@media (min-width:1024px) {
+  .circle {
+    right: 120px;
   }
 }
-  
-  .text {
-    position: absolute; 
-    color: white;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    font-weight: 500;
-    animation: textRotation 10s linear infinite; 
+
+.text {
+  position: absolute;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-weight: 500;
+  animation: textRotation 10s linear infinite;
+}
+
+.text p {
+  margin: 0;
+}
+
+@keyframes textRotation {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .text p {
-    margin: 0; 
+
+  100% {
+    transform: rotate(-360deg);
   }
-  
-  @keyframes textRotation {
-    0% {
-      transform: rotate(0deg); 
-    }
-    100% {
-      transform: rotate(-360deg); 
-    }
-  }
-  
-  .text span {
-    position: absolute;
-    left: 50%;
-    font-size: 1em;
-    transform-origin: 0 50%; 
-    transform: rotate(calc(var(--i) * 13deg)) translateY(-50px);
-  }
+}
+
+.text span {
+  position: absolute;
+  left: 50%;
+  font-size: 1em;
+  transform-origin: 0 50%;
+  transform: rotate(calc(var(--i) * 13deg)) translateY(-50px);
+}
+
+
+
+/* SKILLS BAR */
+
+.barfill {
+  transition: width 0.1s ease-in-out;
+}
