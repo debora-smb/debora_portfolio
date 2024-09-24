@@ -1,3 +1,5 @@
+/* Skills Section */
+
 .barscontainer {
     display: flex;
     flex-direction: column;
@@ -35,3 +37,14 @@
   .technologies span:hover{
 color: #f8b500;
   }
+
+
+
+  
+/* Video Section */
+
+@media (min-width:1700px){
+  .videoSectionTitle{
+    margin: auto;
+  }
+}

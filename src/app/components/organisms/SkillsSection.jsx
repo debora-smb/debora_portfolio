@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import styles from "./SkillsSection.module.css";
+import styles from "./Organisms.module.css";
 
 export default function SkillsSection() {
   const skillsRef = useRef(null);
