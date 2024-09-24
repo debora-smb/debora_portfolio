@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Organisms.module.css";
+import technologies from "../../json/technologies.json"
 import SkillsBar from "../atoms/SkillsBar";
 
 
@@ -46,25 +47,14 @@ export default function SkillsSection() {
         <SkillsBar scrollPosition={scrollPosition3} />
       </section>
       <section className={`${styles.technologies} flex font-avener text-[16px] leading-[16px] mt-8 gap-y-4 gap-x-6 items-center text-white justify-between flex-wrap md:mt-32 md:text-[30px] md:leading-[34px] md:gap-y-8 md:gap-x-12 lg:mt-8 lg:text-[24px] lg:leading-[28px] lg:gap-4  xl:gap-x-2 xl:mt-12 xl:gap-8 xl:text-[30px] xl:leading-[34px] 2xl:gap-8`}>
-        <span>HTML5</span>
-        <span>CSS3</span>
-        <span>JAVASCRIPT ES6</span>
-        <span>REACT</span>
-        <span>NEXT JS</span>
-        <span>TAILWIND</span>
-        <span>GIT VERSION CONTROL</span>
-        <span>FIGMA</span>
-        <span>MySQL</span>
-        <span>PHP</span>
-        <span>LARAVEL</span>
-        <span>WORDPRESS</span>
-        <span>ELEMENTOR</span>
-        <span>TRELLO</span>
-        <span>SCRUM</span>
-        <span>KANBAN</span>
-        <span>TDD</span>
-        <span>SOLID</span>
-        <span>API Rest</span>
+        {technologies.map((tech, index) => (
+          <span
+            key={index}
+            className="hover:text-[#f8b500]"
+          >
+            {tech}
+          </span>
+        ))}
       </section>
     </div>
   );
