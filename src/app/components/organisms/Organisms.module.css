@@ -1,13 +1,3 @@
-/* About Me Section */
-
-.aboutContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-
-
 /* Projects Section */
 
 .carouselInner {

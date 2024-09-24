@@ -67,7 +67,8 @@ body {
 
 @media (min-width:1700px){
 
-  .innerContainer{
+  .innerContainer,
+  .innerContainerNoPadding {
     max-width: 1600px;
     margin: 0 auto;
   }
