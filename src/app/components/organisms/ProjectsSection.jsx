@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import styles from "./projectsSection.module.css"
+import styles from "./Organisms.module.css"
 import Image from "next/image";
 
 export default function ProjectsSection() {

@@ -1,6 +1,6 @@
 "use client";
 import Form from "../molecules/Form";
-import styles from "./ContactSection.module.css";
+import styles from "./Organisms.module.css";
 import Image from "next/image";
 
 

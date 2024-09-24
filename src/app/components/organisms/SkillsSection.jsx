@@ -34,13 +34,13 @@ export default function SkillsSection() {
   }, []);
 
   return (
-      <div ref={skillsRef} id="skills" className={`${styles.barscontainer} innerContainer bg-[#111] px-[5vw] flex flex-row justify-center gap-4`}>
+      <div ref={skillsRef} id="skills" className={`innerContainer bg-[#111] px-[5vw] flex flex-col h-[100vh] justify-center gap-4`}>
         <div className="flex flex-row gap-8 items-center mb-2 lg:justify-between">
           <h2 className="font-avenir text-white text-[50px] leading-[50px] flex md:text-[120px] md:leading-[120px]">SKILLS.</h2>
-          <div className={`${styles.barwrapper1} md:h-[40px] md:mt-14`}>
-            <div className={styles.bar}>
+          <div className={`w-[60%] bg-[#5c636e] md:h-[40px] md:mt-14`}>
+            <div className="h-[40px] w-full bg-[#445f8b] overflow-hidden">
               <div
-                className={styles.barfill}
+                className={`${styles.barfill} h-full w-0 bg-[#ffc115]`}
                 style={{ width: `${scrollPosition1}%` }}
               ></div>
             </div>
@@ -48,20 +48,20 @@ export default function SkillsSection() {
         </div>
         <section className="flex flex-col gap-8 w-full">
           <div className="w-full">
-            <div className={styles.barwrapper}>
-              <div className={styles.bar}>
+            <div className="w-full bg-[#5c636e]">
+              <div className="h-[40px] w-full bg-[#445f8b] overflow-hidden">
                 <div
-                  className={styles.barfill}
+                  className={`${styles.barfill} h-full w-0 bg-[#ffc115]`}
                   style={{ width: `${scrollPosition2}%` }}
                 ></div>
               </div>
             </div>
           </div>
-          <div className="flex font-ivyPresto gap-12 items-center text-white justify-between">
-            <div className={styles.barwrapper}>
-              <div className={styles.bar}>
+          <div className="w-full">
+            <div className="w-full bg-[#5c636e]">
+              <div className="h-[40px] w-full bg-[#445f8b] overflow-hidden">
                 <div
-                  className={styles.barfill}
+                  className={`${styles.barfill} h-full w-0 bg-[#ffc115]`}
                   style={{ width: `${scrollPosition3}%` }}
                 ></div>
               </div>
