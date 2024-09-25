@@ -120,35 +120,6 @@
 }
 
 
-/* TITLE ANIMATION */
-
-.lineUp {
-  animation: 2s anim-lineUp ease-out 1;
-}
-
-@keyframes lineUp {
-  0% {
-    opacity: 0;
-    transform: translateY(80%);
-  }
-
-  20% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-
-
-
 @media (min-width:1024px) {
 
   /* About Me Section */
