@@ -4,6 +4,7 @@ import styles from "./Organisms.module.css";
 import Image from "next/image";
 import { motion } from 'framer-motion';
 import { useEffect, useState, useRef } from "react";
+import Footer from "../atoms/Footer";
 
 export default function ContactSection() {
   const [showTitle, setShowTitle] = useState(false);
@@ -96,7 +97,7 @@ export default function ContactSection() {
           </div>
         </aside>
         </div>
-
+            <Footer />
       </div>
     </div>
   );
