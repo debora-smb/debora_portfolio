@@ -51,8 +51,9 @@ export default function ContactSection() {
 
   return (
     <div className="bg-black w-[100vw] lg:w-[90vw]" id="contact">
-      <div className="innerContainer pr-[5vw] flex flex-col lg:flex-row h-[90vh] md:h-auto lg:h-[100vh]  items-center gap-16 lg:gap-20 lg:justify-between">
-        <div className="text-white text-[60px] md:text-[110px] xl:text-[180px] leading-[70px] md:leading-[110px] xl:leading-[200px] lg:w-[45%]">
+      <div className="innerContainer bg-black pr-[5vw] flex flex-col h-[100vh] items-center justify-center gap-16 md:h-auto lg:h-[100vh] lg:gap-20">
+      <div className="flex flex-col  items-center gap-16 lg:flex-row lg:gap-20 lg:justify-between">
+        <div className="text-white text-[60px] leading-[70px] md:text-[110px] md:leading-[110px] lg:w-[45%] xl:text-[180px]  xl:leading-[200px] ">
           <motion.div
             initial={{ opacity: 0 }}
             animate={showTitle ? "animate" : "initial"}
@@ -68,9 +69,9 @@ export default function ContactSection() {
             </h2>
           </motion.div>
         </div>
-        <aside className="w-full lg:w-[55%] flex flex-col gap-22 lg:justify-center justify-between h-full">
+        <aside className="w-full  flex flex-col gap-22  justify-between h-full lg:w-[55%] lg:justify-center">
           <Form />
-          <div className="flex flex-row items-center justify-between md:justify-end gap-10">
+          <div className="flex flex-row items-center justify-between gap-10 md:justify-end">
             <Image
               height={110}
               width={80}
@@ -94,6 +95,8 @@ export default function ContactSection() {
             />
           </div>
         </aside>
+        </div>
+
       </div>
     </div>
   );
