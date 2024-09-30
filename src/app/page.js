@@ -7,9 +7,9 @@ import HeaderDesktop from "./components/atoms/HeaderDesktop";
 import HeaderMobile from "./components/molecules/HeaderMobile";
 import ScrollCircle from "./components/atoms/Scroll";
 import ProjectsSection from "./components/organisms/ProjectsSection";
-import SkillsSection from "./components/organisms/ToolsSection";
 import AboutMeSection from "./components/organisms/AboutMeSection";
 import Footer from "./components/atoms/Footer";
+import ToolsSection from "./components/organisms/ToolsSection";
 
 
 export default function SinglePageApp() {
@@ -46,7 +46,7 @@ export default function SinglePageApp() {
           <div className="w-full lg:w-[90vw] bg-black flex flex-col gap-[30vh] lg:gap-[30vh]">
             <AboutMeSection />
             <ProjectsSection />
-            <SkillsSection />
+            <ToolsSection />
             <div>
               <ContactSection />
               <Footer />

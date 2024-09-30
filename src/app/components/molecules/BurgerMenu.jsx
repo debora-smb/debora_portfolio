@@ -11,7 +11,7 @@ export default function Menu({ open, setOpen }) {
         <nav className={`${styles.styledMenu} font-avenir`} style={{ transform: open ? 'translateX(0)' : 'translateX(-100%)' }}>
             <a href="/#about-me" onClick={handleLinkClick}>ABOUT ME</a>
             <a href="/#projects" onClick={handleLinkClick}>PROJECTS</a>
-            <a href="/#skills" onClick={handleLinkClick}>SKILLS</a>
+            <a href="/#tools" onClick={handleLinkClick}>TOOLS</a>
             <a href="/#contact" onClick={handleLinkClick}>CONTACT</a>
             <div className={` mt-14 font-ivyPresto text-white flex flex-row items-center justify-center gap-8 h-12`}>
                 follow me

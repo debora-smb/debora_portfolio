@@ -4,7 +4,7 @@ import technologies from "../../json/technologies.json"
 import SkillsBar from "../atoms/SkillsBar";
 
 
-export default function SkillsSection() {
+export default function ToolsSection() {
   const skillsRef = useRef(null);
   const [scrollPosition1, setScrollPosition1] = useState(0);
   const [scrollPosition2, setScrollPosition2] = useState(0);
