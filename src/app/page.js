@@ -48,8 +48,8 @@ export default function SinglePageApp() {
             <ProjectsSection />
             <SkillsSection />
             <div>
-            <ContactSection />
-            <Footer />
+              <ContactSection />
+              <Footer />
             </div>
           </div>
         </div>

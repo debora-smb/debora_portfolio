@@ -2,7 +2,6 @@
 import Form from "../molecules/Form";
 import { motion } from 'framer-motion';
 import { useEffect, useState, useRef } from "react";
-import Footer from "../atoms/Footer";
 
 export default function ContactSection() {
   const [showTitle, setShowTitle] = useState(false); 
