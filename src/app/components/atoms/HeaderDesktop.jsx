@@ -1,16 +1,15 @@
 import styles from './Atoms.module.css';
-import ScrollCircle from './Scroll';
 
-export default function HeaderDesktop(){
+export default function HeaderDesktop() {
 
   return (
-    <header className={`hidden lg:flex bg-black h-[100vh] w-[10vw] flex items-center justify-center fixed right-0`}>
-        <nav className={`text-white flex items-center font-avenir justify-center flex-row gap-10 ${styles.nav}`}>
-            <a href="/#about-me">ABOUT ME</a>
-            <a href="/#projects">PROJECTS</a>
-            <a href="/#skills">SKILLS</a>
-            <a href="/#contact">CONTACT</a>
-        </nav>
+    <header className={`hidden lg:flex bg-black h-[100vh] w-[10vw] items-center justify-center fixed right-0`}>
+      <nav className={`text-white font-avenir w-full h-full flex flex-row justify-center items-center ${styles.nav}`}>
+        <a href="/#about-me">AB<span className={styles.letter}></span>UT ME</a>
+        <a href="/#projects">PR<span className={styles.letter}></span>JECTS</a>
+        <a href="/#tools">T<span className={styles.letter}></span><span className={styles.letterFixed}></span>LS</a>
+        <a href="/#contact">C<span className={styles.letter}></span>NTACT</a>
+      </nav>
     </header>
   );
 };

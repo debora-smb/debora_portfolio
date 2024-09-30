@@ -37,9 +37,9 @@ export default function SkillsSection() {
   }, []);
 
   return (
-    <div ref={skillsRef} id="skills" className={`innerContainer bg-[#111] px-[5vw] flex flex-col h-[100vh] justify-center gap-4`}>
+    <div ref={skillsRef} id="tools" className={`innerContainer bg-[#111] px-[5vw] flex flex-col h-[100vh] justify-center gap-4`}>
       <div className="flex flex-row gap-8 items-center mb-2 lg:justify-between">
-        <h2 className="font-avenir text-white text-[50px] leading-[50px] flex md:text-[120px] md:leading-[120px]">SKILLS.</h2>
+        <h2 className="font-avenir text-white text-[50px] leading-[50px] flex md:text-[120px] md:leading-[120px]">TOOLS.</h2>
         <SkillsBar scrollPosition={scrollPosition1} />
       </div>
       <section className="flex flex-col gap-8 w-full">

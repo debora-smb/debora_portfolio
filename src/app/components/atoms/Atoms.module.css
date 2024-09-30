@@ -1,12 +1,26 @@
 /* HEADER  */
-
-.nav a {
-  transition: text-decoration 50s ease;
+.nav a{
+	display: flex;
+  align-items:center;
+  justify-content: center;
+  height: 120px;
 }
 
-.nav a:hover {
-  text-decoration: line-through;
+
+.letter, .letterFixed {
+	display: inline-flex;
+	height: 12px;
+	width: 12px;
+	border: 1px solid white;
+	border-radius: 14px;
+	transition: 0.5s ease-in-out ;
 }
+
+
+.nav a:hover .letter{
+	height: 25px;
+}
+
 
 @media (min-width: 1024px) {
   .nav {
