@@ -19,7 +19,26 @@ module.exports = {
         grey: '#5c636e',
         greyText: '#313131a2',
         blackOverlay: 'rgba(0, 0, 0, 0.55)',
-      }
+      },
+      keyframes: {
+        fadeInOut1: {
+          '0%, 80%': { opacity: '1' },
+          '90%, 100%': { opacity: '0.5' },
+        },
+        fadeInOut2: {
+          '33%, 80%': { opacity: '1' },
+          '0%, 23%, 90%, 100%': { opacity: '0.5' },
+        },
+        fadeInOut3: {
+          '63%, 80%': { opacity: '1' },
+          '0%, 53%, 90%, 100%': { opacity: '0.5' },
+        },
+      },
+      animation: {
+        fadeInOut1: 'fadeInOut1 5s infinite',
+        fadeInOut2: 'fadeInOut2 5s infinite',
+        fadeInOut3: 'fadeInOut3 5s infinite',
+      },
     },
   },
   plugins: [],

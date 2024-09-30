@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser"
 import styles from "./Molecules.module.css"
+import DucksAnimation from "../atoms/Ducks";
 
 export default function Form() {
   const refForm = useRef();
@@ -52,6 +53,7 @@ export default function Form() {
       >
         <span>SUBMIT</span>
       </button>
+      <DucksAnimation />
     </form>
   );
 }
