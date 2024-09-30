@@ -24,51 +24,13 @@
   padding: 0;
 }
 
-body {
-  background-color: #111; 
-}
-
-.videoSection {
-  position: fixed;
-  top: 10vh;
-  left: 0;
-  height: 100vh;
-  z-index: 1;
-  transition: background-color 0.3s ease;
-}
-
-.roundTopSection {
-  position: relative;
-  top: 100vh;
-  height: 100vh;
-  width: 100vw;
-  z-index: 2;
-  transition: background-color 0.3s ease;
-}
-
 .innerContainer{
   padding: 0vw 5vw 0vw 5vw;
 }
 
-.innerContainerNoPadding{
-  padding: 0vw 0vw 0vw 5vw;
-}
-  
-
-@media (min-width:1024px){
-.videoSection {
-  top: 0;
-}
-
-.roundTopSection {
-  width:90vw;
-}
-}
-
 @media (min-width:1700px){
 
-  .innerContainer,
-  .innerContainerNoPadding {
+  .innerContainer{
     max-width: 1600px;
     margin: 0 auto;
   }

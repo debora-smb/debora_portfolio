@@ -1,43 +1,19 @@
 /* Projects Section */
 
-.carouselInner {
-  white-space: nowrap;
-  overflow: hidden;
-  display: flex;
-  gap: 50px;
-}
 
-.item {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
 
-.sticky {
-  position: sticky;
-  max-height: 80vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-}
+
 
 .dim {
   display: block;
   min-width: 90vw;
-  height: 80vh;
-
 }
 
 .dim div {
   display: flex;
 }
 
-.horizontal {
-  display: flex;
-  height: 80vh;
-  gap: 300px;
-  align-items: center;
-}
+
 
 .list {
   display: flex;

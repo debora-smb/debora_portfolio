@@ -34,81 +34,75 @@ export default function ProjectsSection() {
   }, []);
 
   return (
-    <div className={` bg-[#111] w-[90vw] pl-[5vw] relative`} id="projects">
-       <div className={`${styles.stickyParent} h-[500vh] sticky top-0 flex flex-col gap-16`} ref={parentRef}>
-        <div  className={`sticky top-0 flex pt-[5vh] flex-col gap-16`}>
-      
-        <div className={`${styles.carouselInner} font-ivyPresto text-white text-[30px]`}>
-          <div className={styles.list}>
-            <div className={styles.item}>
-              <h2 className="font-avenir text-[80px]">PROJECTS</h2>
-              <span>-</span>
-              <h2 className="font-ivyPresto text-[60px]">PROJECTS</h2>
-              <span>-</span>
+    <div className={` bg-[#111] w-[90vw] relative`} id="projects">
+      <div className={`h-[500vh] sticky top-0`} ref={parentRef}>
+        <div className={`sticky top-0`}>
+        <div className={`flex flex-col gap-2 justify-center h-[100vh] innerContainer`}>
+          <div className={`overflow-hidden whitespace-nowrap flex gap-[50px] font-ivyPresto text-white text-[30px]`}>
+            <div className={styles.list}>
+              <div className="flex items-center gap-[50px]">
+                <h2 className="font-avenir text-[80px]">PROJECTS</h2>
+                <span>-</span>
+                <h2 className="font-ivyPresto text-[60px]">PROJECTS</h2>
+                <span>-</span>
+              </div>
+            </div>
+            <div className={styles.list}>
+            <div className="flex items-center gap-[50px]">
+                <h2 className="font-avenir text-[80px]">PROJECTS</h2>
+                <span>-</span>
+                <h2 className="font-ivyPresto text-[60px]">PROJECTS</h2>
+                <span>-</span>
+              </div>
             </div>
           </div>
-          <div className={styles.list}>
-            <div className={styles.item}>
-              <h2 className="font-avenir text-[80px]">PROJECTS</h2>
-              <span>-</span>
-              <h2 className="font-ivyPresto text-[60px]">PROJECTS</h2>
-              <span>-</span>
+
+
+          <div className={`sticky max-h-[80vh] overflow-hidden flex items-center`} ref={stickyRef}>
+            <div className="flex gap-[200px] items-center">
+              <div className={`${styles.dim} bg-white`}>
+                <div>
+                  <video autoPlay loop muted className="h-[55vh]">
+                    <source src="/video/toquen_el_dom.mp4" type="video/mp4" />
+                  </video>
+                  <aside>
+                    <h3 className="text-white">Pagina web</h3>
+                    <div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+              <div className={styles.dim}>
+                <Image
+                  width={700}
+                  height={410}
+                  alt="Laptop frame"
+                  src="/img/desktop_frame.webp" />
+              </div>
+              <div className={styles.dim}>
+                <Image
+                  width={700}
+                  height={410}
+                  alt="Laptop frame"
+                  src="/img/desktop_frame.webp" />
+              </div>
+              <div className={styles.dim}>
+                <Image
+                  width={700}
+                  height={410}
+                  alt="Laptop frame"
+                  src="/img/desktop_frame.webp" />
+              </div>
+              <div className={styles.dim}>
+                <Image
+                  width={700}
+                  height={410}
+                  alt="Laptop frame"
+                  src="/img/desktop_frame.webp" />
+              </div>
             </div>
           </div>
         </div>
-
-       
-        <div className={`${styles.sticky}`} ref={stickyRef}>
-          <div className={styles.horizontal}>
-            <div className={styles.dim}>
-              <div>
-              <Image
-              width={700} 
-              height={410}
-              alt="Laptop frame"
-              src="/img/desktop_frame.webp"
-              className={`relative z-2 `} />
-              
-               <aside>
-                <h3 className="text-white">Pagina web</h3>
-                <div>
-                  
-                </div>
-
-              </aside>
-              </div>
-              
-            </div>
-            <div className={styles.dim}>
-            <Image
-              width={700} 
-              height={410}
-              alt="Laptop frame"
-              src="/img/desktop_frame.webp" />
-            </div>
-            <div className={styles.dim}>
-            <Image
-              width={700} 
-              height={410}
-              alt="Laptop frame"
-              src="/img/desktop_frame.webp" />
-            </div>
-            <div className={styles.dim}>
-            <Image
-              width={700} 
-              height={410}
-              alt="Laptop frame"
-              src="/img/desktop_frame.webp" />
-            </div>
-            <div className={styles.dim}>
-            <Image
-              width={700} 
-              height={410}
-              alt="Laptop frame"
-              src="/img/desktop_frame.webp" />
-            </div>
-          </div>
-          </div>
         </div>
       </div>
     </div>

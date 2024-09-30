@@ -6,8 +6,8 @@ import FollowMe from "../molecules/FollowMe";
 export default function AboutMeSection() {
 
     return (
-        <div className="bg-black w-[100vw] h-[100vh] pr-[5vw]  border-[10px] border-t-[0px]  border-black  md:border-[0px] lg:pr-0 lg:w-[90vw] lg:border-t-[0px] lg:border-[20px]" id="about-me">
-            <div className={`innerContainerNoPadding gap-4 h-[100vh] justify-center md:gap-12 ${styles.aboutContainer}`}>
+        <div className="bg-black w-[100vw] h-[100vh]   border-[10px] border-t-[0px]  border-black  md:border-[0px] lg:pr-0 lg:w-[90vw] lg:border-t-[0px] lg:border-[20px]" id="about-me">
+            <div className={`innerContainer gap-4 h-[100vh] justify-center md:gap-12 ${styles.aboutContainer}`}>
                 <div className="text-white text-[26px] leading-[30px] flex flex-col gap-4 justify-center relative z-2 lg:gap-20 ">
                     <InfoAboutMe />
                     <div className="hidden lg:flex">
