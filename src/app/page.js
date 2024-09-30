@@ -9,6 +9,7 @@ import ScrollCircle from "./components/atoms/Scroll";
 import ProjectsSection from "./components/organisms/ProjectsSection";
 import SkillsSection from "./components/organisms/SkillsSection";
 import AboutMeSection from "./components/organisms/AboutMeSection";
+import Footer from "./components/atoms/Footer";
 
 
 export default function SinglePageApp() {
@@ -46,7 +47,10 @@ export default function SinglePageApp() {
             <AboutMeSection />
             <ProjectsSection />
             <SkillsSection />
+            <div>
             <ContactSection />
+            <Footer />
+            </div>
           </div>
         </div>
       </main >

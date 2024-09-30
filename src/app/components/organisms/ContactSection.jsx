@@ -36,8 +36,8 @@ export default function ContactSection() {
 
   return (
     <div className="bg-black w-[100vw] lg:w-[90vw]" id="contact">
-      <div className="innerContainer bg-black pr-[5vw] flex flex-col min-h-[90vh] items-center justify-center gap-16 md:h-auto lg:h-[100vh] lg:gap-20">
-        <div className="flex flex-col items-center gap-16 lg:flex-row lg:gap-20 lg:justify-between">
+      <div className="innerContainer bg-black pr-[5vw] flex flex-col min-h-[90vh] items-center justify-center gap-16 md:h-auto lg:h-[90vh] lg:gap-20">
+        <div className="flex flex-col items-center gap-16 w-full lg:flex-row lg:gap-20 lg:justify-between">
           <div className="text-white text-[60px] leading-[70px] md:text-[110px] md:leading-[110px] lg:w-[45%] xl:text-[180px] xl:leading-[200px] ">
             <motion.div
               initial={{ opacity: 0 }} 
@@ -58,7 +58,6 @@ export default function ContactSection() {
             <Form />
           </aside>
         </div>
-        <Footer />
       </div>
     </div>
   );
