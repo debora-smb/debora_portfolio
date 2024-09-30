@@ -144,3 +144,15 @@
 .barfill {
   transition: width 0.1s ease-in-out;
 }
+
+
+/* FOOTER */
+.footer {
+  letter-spacing: 3px;
+  transition: 0.5s linear;
+}
+
+.footer:hover {
+  text-shadow: #fff 0 0 3px;
+  letter-spacing: 7px;
+}
