@@ -102,7 +102,7 @@
 .scroll {
   z-index: 1;
   position: fixed;
-  bottom: 30px;
+  bottom: 70px;
   right: 9vw;
   width: 35px;
 	height: 60px;
@@ -134,10 +134,17 @@
     }
   }
 
-
+  
+  @media (min-width:767px) {
+    .scroll {
+      right: 6vw;
+      bottom:100px;
+    }
+  }
   @media (min-width:1024px) {
     .scroll {
       right: 11vw;
+      bottom:30px;
     }
   }
 
@@ -155,7 +162,6 @@
 }
 
 .footer:hover {
-  text-shadow: #fff 0 0 3px;
   letter-spacing: 7px;
 }
 
@@ -186,8 +192,8 @@
 
 .itemtxt,
 .itemspace {
-  font-size: 80px;
-  line-height: 110px;
+  font-size: 50px;
+  line-height: 80px;
   font-style: normal;
   font-weight: normal;
   letter-spacing: 0.1em;
@@ -195,6 +201,14 @@
   color: #d6d6d6;
 }
 
+@media (min-width:767px){
+  
+.itemtxt,
+.itemspace {
+  font-size: 80px;
+  line-height: 110px;
+}
+}
 
 
 @keyframes loop {

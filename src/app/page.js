@@ -43,7 +43,7 @@ export default function SinglePageApp() {
             <div className="w-[200vw] h-[40vh] lg:h-[120vh] rounded-t-[70%] ml-[-60vw] flex justify-center pt-[20vh] bg-black">
             </div>
           </div>
-          <div className="w-full lg:w-[90vw] bg-black flex flex-col gap-[30vh] lg:gap-[30vh]">
+          <div className="w-full lg:w-[90vw] bg-black flex flex-col gap-[5vh] lg:gap-[30vh]">
             <AboutMeSection />
             <ProjectsSection />
             <ToolsSection />
