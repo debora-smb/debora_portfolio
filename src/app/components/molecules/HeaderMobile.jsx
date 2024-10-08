@@ -21,7 +21,7 @@ export default function HeaderMobile(){
   }, [node]);
 
   return (
-    <header className={`lg:hidden bg-black h-[10vh] w-[100vw] flex items-center fixed z-[444] p-[20px] md:p-[50px]`} ref={node}>
+    <header className={`lg:hidden bg-black h-[10vh] w-[100vw] flex items-center fixed z-[444] p-[20px] md:p-[5vw]`} ref={node}>
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
     </header>

@@ -35,7 +35,7 @@ export default function InfoAboutMe(){
 
     return (
         <>
-            <div className="text-[12px] md:h-[60px] lg:h-fit lg:w-[370px] xl:w-full md:text-[24px] mt-20 md:mt-32 lg:mt-0" ref={typewriterRef}>
+            <div className="text-[14px] md:h-[60px] lg:h-fit lg:w-[370px] xl:w-full md:text-[24px] mt-20 md:mt-32 lg:mt-0" ref={typewriterRef}>
                 {showTypewriter && (
                     <Typewriter
                         options={{

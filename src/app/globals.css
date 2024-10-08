@@ -25,7 +25,16 @@
 }
 
 .innerContainer{
-  padding: 0vw 5vw 0vw 5vw;
+  padding: 0 20px;
+}
+
+
+@media (min-width:767px){
+
+  .innerContainer{
+    padding: 0vw 5vw;
+  }
+
 }
 
 @media (min-width:1700px){
