@@ -5,11 +5,11 @@ import { useEffect, useState } from "react";
 import Loader from "./components/atoms/Loader";
 import HeaderDesktop from "./components/atoms/HeaderDesktop";
 import HeaderMobile from "./components/molecules/HeaderMobile";
-import ScrollCircle from "./components/atoms/Scroll";
 import ProjectsSection from "./components/organisms/ProjectsSection";
 import AboutMeSection from "./components/organisms/AboutMeSection";
 import Footer from "./components/atoms/Footer";
 import ToolsSection from "./components/organisms/ToolsSection";
+import ScrollMouse from "./components/atoms/Scroll";
 
 
 export default function SinglePageApp() {
@@ -31,7 +31,7 @@ export default function SinglePageApp() {
 
   return (
     <>
-      <ScrollCircle />
+      <ScrollMouse/>
       <HeaderDesktop />
       <HeaderMobile />
       <main>

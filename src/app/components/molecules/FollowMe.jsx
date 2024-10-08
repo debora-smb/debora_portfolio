@@ -4,7 +4,7 @@ export default function FollowMe() {
 
     return (
         <div
-                className={`font-ivyPresto text-[16px] leading-[12px] mt-4  text-white flex flex-col md:flex-row items-center gap-4 md:gap-16 h-12 md:text-[24px] lg:text-[30px]  lg:leading-[50px] lg:mt-0`}
+                className={`font-ivyPresto text-[16px] leading-[12px] mt-4  text-white flex flex-row items-center gap-4 md:gap-16 h-12 md:text-[24px] lg:text-[30px]  lg:leading-[50px] lg:mt-0`}
             >
         
             <div

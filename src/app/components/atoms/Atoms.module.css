@@ -96,62 +96,50 @@
 
 /* SCROLL */
 
-.circle {
+
+
+
+.scroll {
+  z-index: 1;
   position: fixed;
-  bottom: 60px;
-  right: 60px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 400;
-  background: transparent;
+  bottom: 30px;
+  right: 9vw;
+  width: 35px;
+	height: 60px;
+	border: 3px solid #fff;
+	border-radius: 60px;
 }
 
-@media (min-width:1024px) {
-  .circle {
-    right: 9vw;
-  }
-}
 
-.text {
-  position: absolute;
-  color: white;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  font-weight: 500;
-  animation: textRotation 10s linear infinite;
-}
+	.scroll:before {
+    content: '';
+		width: 8px;
+		height: 8px;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #fff;
+		border-radius: 50%;
+		opacity: 1;
+		animation: wheel 2s infinite;
+		-webkit-animation: wheel 2s infinite;
+	}
 
-.text p {
-  margin: 0;
-}
 
-@keyframes textRotation {
-  0% {
-    transform: rotate(0deg);
+  @keyframes wheel {
+    to {
+      opacity: 0;
+      top: 40px;
+    }
   }
 
-  100% {
-    transform: rotate(-360deg);
+
+  @media (min-width:1024px) {
+    .scroll {
+      right: 11vw;
+    }
   }
-}
-
-.text span {
-  position: absolute;
-  left: 50%;
-  font-size: 1em;
-  transform-origin: 0 50%;
-  transform: rotate(calc(var(--i) * 13deg)) translateY(-50px);
-}
-
-
 
 /* SKILLS BAR */
 
