@@ -26,7 +26,7 @@ export default function Loader() {
                     <span className="font-avenir tracking-normal"> Portfolio</span>
                 </h1>
             </div>
-            <div className="text-greyText text-9xl h-full flex items-center pb-[100px] lg:pb-0">{percentage}%</div>
+            <div className="text-greyText text-9xl h-full flex items-center pb-[50px] md:pb-[100px] lg:pb-0">{percentage}%</div>
         </div>
 
     );
