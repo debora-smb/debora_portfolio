@@ -170,3 +170,47 @@
   text-shadow: #fff 0 0 3px;
   letter-spacing: 7px;
 }
+
+
+
+
+
+
+
+
+
+.container {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 200px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  animation: loop 35s infinite linear;
+}
+
+.itemspace {
+  padding: 0 40px;
+}
+
+.itemtxt,
+.itemspace {
+  font-size: 80px;
+  line-height: 110px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #d6d6d6;
+}
+
+
+
+@keyframes loop {
+  100% {
+    transform: translateX(-100%);
+  }
+}
