@@ -13,7 +13,7 @@ export default function Menu({ open, setOpen }) {
             <a href="/#projects" onClick={handleLinkClick}>PROJECTS</a>
             <a href="/#tools" onClick={handleLinkClick}>TOOLS</a>
             <a href="/#contact" onClick={handleLinkClick}>CONTACT</a>
-            <div className={` mt-14 font-ivyPresto text-white flex flex-row items-center justify-center gap-8 h-12`}>
+            <div className={` mt-14 font-avenir text-2xl md:text-[28px] text-white flex flex-row items-center justify-center gap-8 h-12`}>
                 follow me
                 <a href="https://github.com/debora-smb" target="_blank" rel="noopener noreferrer">
                     <Image
