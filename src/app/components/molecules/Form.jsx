@@ -62,7 +62,7 @@ export default function Form() {
         />
         <button
           type="submit"
-          className={`${styles.contactButton} font-avenir border-[1px] border-white text-white text-center relative w-full md:w-32 p-2 tracking-widest uppercase`}
+          className={`${styles.contactButton} font-avenir border-[1px] border-white text-white text-center relative w-full md:w-48 lg:w-32 p-2 tracking-widest uppercase`}
         >
           <span>SUBMIT</span>
         </button>

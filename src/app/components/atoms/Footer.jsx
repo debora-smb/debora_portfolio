@@ -15,7 +15,7 @@ export default function Footer() {
 
   return (
       <footer
-        className={` ${style.footer} text-white text-center font-avenir text-lg lg:ml-[5vw] p-4 w-full cursor-pointer`}
+        className={` ${style.footer} text-white text-center font-avenir text-lg  p-8 w-full cursor-pointer lg:ml-[5vw]`}
         onClick={handleBackToTop} 
       >
         BACK TO TOP
