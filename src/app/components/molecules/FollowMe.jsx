@@ -4,7 +4,7 @@ export default function FollowMe() {
 
     return (
         <div
-                className={`font-ivyPresto text-[16px] leading-[12px] mt-4  text-white flex flex-row items-center gap-4 md:gap-16 h-12 md:text-[24px] lg:text-[30px]  lg:leading-[50px] lg:mt-0`}
+                className={`font-avenir text-[17px] leading-[19px] mt-0  text-white flex flex-row items-center justify-start gap-8  md:gap-16 h-12 md:text-[24px] lg:text-[28px]  lg:leading-[50px] lg:mt-0`}
             >
         
             <div
@@ -41,7 +41,7 @@ export default function FollowMe() {
                     target="_blank" 
                     rel="noopener noreferrer"
                     download="Debora_Menezes_CV.pdf"
-                    className="inline-flex gap-4 items-center"
+                    className="inline-flex gap-2 md:gap-4 items-center"
                 >curriculum vitae
                     <Image
                         width={22}

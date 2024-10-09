@@ -38,7 +38,7 @@ export default function SinglePageApp() {
         <div className="fixed top-[10vh] left-0 h-[100vh] bg-black lg:top-0">
           <VideoSection />
         </div>
-        <div className="relative top-[100vh] h-[100vh] w-[100vw] z-10 lg:w-[90vw]">
+        <div className="relative top-[90vh] h-[100vh] w-[100vw] z-10 lg:top-[100vh] lg:w-[90vw]">
           <div className="overflow-hidden h-[10vh] lg:h-[40vh]">
             <div className="w-[200vw] h-[40vh] lg:h-[120vh] rounded-t-[70%] ml-[-60vw] flex justify-center pt-[20vh] bg-black">
             </div>

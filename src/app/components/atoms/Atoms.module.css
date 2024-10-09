@@ -51,7 +51,7 @@
 
 .styledBurger div {
   width: 2rem;
-  height: 0.25rem;
+  height: 0.2rem;
   background: var(--burger-color);
   border-radius: 10px;
   transition: all 0.3s linear;
@@ -102,7 +102,7 @@
 .scroll {
   z-index: 1;
   position: fixed;
-  bottom: 70px;
+  bottom: 16vh;
   right: 9vw;
   width: 35px;
 	height: 60px;
@@ -138,13 +138,13 @@
   @media (min-width:767px) {
     .scroll {
       right: 6vw;
-      bottom:100px;
+      bottom:14vh;
     }
   }
   @media (min-width:1024px) {
     .scroll {
-      right: 11vw;
-      bottom:30px;
+      right: 13vw;
+      bottom:6vh;
     }
   }
 

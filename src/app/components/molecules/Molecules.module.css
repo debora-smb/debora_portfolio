@@ -67,7 +67,7 @@
 }
 
 .styledMenu a {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   padding: 2rem 0;
   font-weight: bold;
@@ -80,4 +80,11 @@
 
 .styledMenu a:hover {
   color: #474747;
+}
+
+
+@media (min-width:767px){
+  .styledMenu a {
+    font-size: 1.5rem;
+  }
 }

@@ -46,7 +46,7 @@ export default function VideoSection() {
             }}
             ref={titleRef} 
           >
-            <h1 className={` ${styles.videoSectionTitle} text-white font-ivyPresto text-[70px] leading-[80px] md:text-[110px] md:leading-[110px] xl:text-[200px] xl:leading-[200px] 2xl:w-[1330px]`}>
+            <h1 className={` ${styles.videoSectionTitle} text-white font-ivyPresto text-[70px] leading-[80px] md:text-[110px] md:leading-[110px] xl:text-[180px] xl:leading-[200px] 2xl:text-[200px] 2xl:w-[1330px]`}>
               TURNING IDEAS INTO CODE
             </h1>
           </motion.div>

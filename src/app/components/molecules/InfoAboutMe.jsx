@@ -35,7 +35,7 @@ export default function InfoAboutMe(){
 
     return (
         <>
-            <div className="text-[14px] md:h-[60px] lg:h-fit lg:w-[370px] xl:w-full md:text-[24px] mt-20 md:mt-32 lg:mt-0" ref={typewriterRef}>
+            <div className=" w-[265px] text-[18px] h-14  mt-20  md:h-[60px] md:w-full md:mt-32  md:text-[24px] lg:mt-0 lg:w-[370px] xl:h-fit xl:w-full " ref={typewriterRef}>
                 {showTypewriter && (
                     <Typewriter
                         options={{
@@ -65,10 +65,10 @@ export default function InfoAboutMe(){
                 >
                     {showTitle && (
                         <span
-                            className={`text-[50px] leading-[50px] md:-mt-34 md:ml-32 font-avenir md:text-[90px] md:leading-[100px] lg:text-[100px] text-grey`}
+                            className={`text-[50px] leading-[50px] ml-6 relative z-20 md:-mt-34 md:ml-24 font-avenir md:text-[90px] md:leading-[100px] lg:text-[100px] text-grey`}
                         >
                             FRONTEND{" "}
-                            <span className="md:text-[110px] md:ml-44 text-[50px] leading-[50px] font-ivyPresto ml-8">
+                            <span className="md:text-[110px] md:ml-36 text-[50px] leading-[50px] font-ivyPresto ml-16">
                                 DEVELOPER
                             </span>
                         </span>
