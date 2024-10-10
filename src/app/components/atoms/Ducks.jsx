@@ -9,21 +9,21 @@ export default function DucksAnimation() {
                 width={80}
                 src="/img/rubber-duck.webp"
                 alt="3d Rubber duck"
-                className="duck opacity-50 animate-fadeInOut1 lg:w-[70px] xl:w-fit"
+                className="duck opacity-50 animate-fadeInOut1 lg:w-[70px] 2xl:w-fit"
             />
             <Image
                 height={110}
                 width={80}
                 src="/img/rubber-duck.webp"
                 alt="3d Rubber duck"
-                className="duck opacity-50 animate-fadeInOut2 lg:w-[70px] xl:w-fit"
+                className="duck opacity-50 animate-fadeInOut2 lg:w-[70px] 2xl:w-fit"
             />
             <Image
                 height={110}
                 width={80}
                 src="/img/rubber-duck.webp"
                 alt="3d Rubber duck"
-                className="duck opacity-50 animate-fadeInOut3 lg:w-[70px] xl:w-fit"
+                className="duck opacity-50 animate-fadeInOut3 lg:w-[70px] 2xl:w-fit"
             />
         </div>
     )

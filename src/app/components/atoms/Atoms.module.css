@@ -137,6 +137,13 @@
   
   @media (min-width:767px) {
     .scroll {
+      right: 5vw;
+      bottom:24vh;
+    }
+  }
+
+  @media (min-width:1024px) {
+    .scroll {
       right: 30px;
       bottom:30px;
     }
@@ -153,11 +160,16 @@
 .footer {
   letter-spacing: 3px;
   transition: 0.5s linear;
+  user-select: none; 
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none; 
 }
 
 .footer:hover {
   letter-spacing: 7px;
 }
+
 
 
 
