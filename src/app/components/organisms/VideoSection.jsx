@@ -1,6 +1,7 @@
 import styles from "./Organisms.module.css";
 import { motion } from 'framer-motion';
 import { useEffect, useState, useRef } from "react";
+import ScrollMouse from "../atoms/Scroll";
 
 export default function VideoSection() {
   const [showTitle, setShowTitle] = useState(true); 
@@ -52,6 +53,7 @@ export default function VideoSection() {
           </motion.div>
         </div>
       </div>
+      <ScrollMouse />
     </>
   );
 }

@@ -9,7 +9,6 @@ import ProjectsSection from "./components/organisms/ProjectsSection";
 import AboutMeSection from "./components/organisms/AboutMeSection";
 import Footer from "./components/atoms/Footer";
 import ToolsSection from "./components/organisms/ToolsSection";
-import ScrollMouse from "./components/atoms/Scroll";
 
 
 export default function SinglePageApp() {
@@ -31,7 +30,6 @@ export default function SinglePageApp() {
 
   return (
     <>
-      <ScrollMouse/>
       <HeaderDesktop />
       <HeaderMobile />
       <main>
