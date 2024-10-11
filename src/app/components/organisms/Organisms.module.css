@@ -1,20 +1,5 @@
 /* Projects Section */
 
-
-
-
-
-.dim {
-  display: block;
-  min-width: 90vw;
-}
-
-.dim div {
-  display: flex;
-}
-
-
-
 .list {
   display: flex;
   align-items: center;
