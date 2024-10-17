@@ -34,7 +34,7 @@ export default function ContactSection() {
   }, []);
 
   return (
-    <div className="bg-black w-[100vw] lg:w-[90vw]" id="contact">
+    <div className="bg-black w-[100vw] lg:w-[85vw]" id="contact">
       <div className="innerContainer bg-black pr-[5vw] flex flex-col min-h-[85vh] items-center justify-center gap-16 md:h-auto lg:h-[85vh] lg:gap-20">
         <div className="flex flex-col items-center gap-16 w-full lg:flex-row lg:gap-20 lg:justify-between">
           <div className="text-white text-[60px] leading-[70px] md:text-[110px] md:leading-[110px] lg:w-[45%] xl:text-[180px] xl:leading-[200px] ">

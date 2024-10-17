@@ -6,15 +6,15 @@ import FollowMe from "../molecules/FollowMe";
 export default function AboutMeSection() {
 
     return (
-        <div className="bg-black w-[100vw] h-[100vh] lg:pr-0 lg:w-[90vw]" id="about-me">
-            <div className={`innerContainer gap-4 h-[100vh] flex flex-col justify-center items-center md:gap-12 ${styles.aboutContainer}`}>
-                <div className="text-white text-[26px] w-full leading-[30px] flex flex-col gap-4 lg:gap-20 ">
+        <div className="bg-black w-[100vw] h-[100vh] lg:pr-0 lg:w-[85vw]" id="about-me">
+            <div className={`innerContainer gap-4 h-[100vh] flex flex-col justify-center items-center md:gap-12 lg:flex-row`}>
+                <div className="text-white text-[26px] w-[60%] leading-[30px] flex flex-col gap-4 lg:gap-20 ">
                     <InfoAboutMe />
                     <div className="hidden lg:flex">
                         <FollowMe />
                     </div>
                 </div>
-                <aside className="bg-yellow h-fit w-full">
+                <aside className="bg-yellow h-fit w-[40%]">
                     <Image
                         height={500}
                         width={750}

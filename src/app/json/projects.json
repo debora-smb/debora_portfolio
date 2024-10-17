@@ -14,22 +14,6 @@
         "web": null,
         "image": "/img/dr_who.webp",
         "technologies": ["/img/icon-tailwind.svg", "/img/icon-php.svg","/img/icon-tailwind.svg", "/img/icon-php.svg"]
-      },
-      {
-        "id":2,
-        "name": "Mystic Sakura",
-        "github": "https://github.com/01joanna/mystic-sakura",
-        "web": null,
-        "image": "/img/DSC_05601.webp",
-        "technologies": ["/img/icon-tailwind.svg", "/img/icon-php.svg","/img/icon-tailwind.svg", "/img/icon-php.svg"]
-      },
-      {
-        "id":3,
-        "name": "Dating Lab",
-        "github": "https://github.com/orgs/FemCodersP4/repositories",
-        "web": null,
-        "image": "/img/DSC_05601.webp",
-        "technologies": ["/img/icon-tailwind.svg", "/img/icon-php.svg","/img/icon-tailwind.svg", "/img/icon-php.svg"]
       }
     ]
   

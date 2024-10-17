@@ -183,7 +183,10 @@
   display: flex;
   white-space: nowrap;
   overflow: hidden;
-  height: 200px;
+  height: 100px;
+
+  
+
 }
 
 .list {
@@ -204,15 +207,15 @@
   font-weight: normal;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #d6d6d6;
+  color: #fff;
 }
 
 @media (min-width:767px){
   
 .itemtxt,
 .itemspace {
-  font-size: 60px;
-  line-height: 80px;
+  font-size: 80px;
+  line-height: 100px;
 }
 }
 
