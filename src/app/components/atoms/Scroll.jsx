@@ -5,7 +5,7 @@ export default function ScrollMouse() {
 
   return (
     <div
-      className={styles.scroll}
+      className={`${styles.scroll} dark:border-white`}
     >
     </div>
   );

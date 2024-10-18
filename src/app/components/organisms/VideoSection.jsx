@@ -28,11 +28,11 @@ export default function VideoSection() {
       <video autoPlay loop muted className="h-[100vh] w-[85vw] object-cover object-center hidden lg:flex">
         <source src="/video/hero_home_video_desktop.mp4" type="video/mp4" />
       </video>
-      <video autoPlay loop muted className="h-[80vh] w-[100vw] object-cover object-center  border-black border-[20px] border-t-[0px] md:border-[20px] md:border-t-[0px] lg:hidden lg:border-[20px] lg:border-r-0" >
+      <video autoPlay loop muted className="h-[80vh] w-[100vw] object-cover object-center dark:border-black border-black border-[20px] border-t-[0px] md:border-[20px] md:border-t-[0px] lg:hidden lg:border-[20px] lg:border-r-0" >
         <source src="/video/hero_home_video_mobile.mp4" type="video/mp4" />
       </video>
       <div className={`innerContainer flex  justify-center h-full w-[100vw] lg:w-[85vw]`}>
-        <div className={`absolute top-0 left-0 h-[80vh] bg-blackOverlay border-[20px] border-t-[0px] border-black  w-full z-10 flex items-center p-[5vw] md:border-[20px] md:border-t-[0px] lg:border-[20px] lg:border-r-0 lg:h-full`}>
+        <div className={`absolute top-0 left-0 h-[80vh] bg-blackOverlay border-[20px] border-t-[0px] dark:border-black border-black  w-full z-10 flex items-center p-[5vw] md:border-[20px] md:border-t-[0px] lg:border-[20px] lg:border-r-0 lg:h-full`}>
           
         <motion.div
             initial={{ opacity: 0 }}

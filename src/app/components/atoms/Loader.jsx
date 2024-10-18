@@ -21,12 +21,12 @@ export default function Loader() {
     return (
 
         <div className='flex flex-col justify-center items-center h-[100vh] bg-black text-white'>
-            <div className={`z-2 h-full flex items-center absolute text-[30px] font-bold top-0 font-ivyPresto`}>
+            <div className={`z-2 h-full flex items-center absolute text-[26px] md:text-[30px] font-bold top-0 font-ivyPresto`}>
                 <h1 className={`${styles.portfolioName} tracking-wide`}>Débora Menezes 
                     <span className="font-avenir tracking-normal"> Portfolio</span>
                 </h1>
             </div>
-            <div className="text-greyText text-9xl h-full flex items-center pb-[50px] md:pb-[100px] lg:pb-0">{percentage}%</div>
+            <div className="text-greyText text-8xl md:text-9xl h-full flex items-center pb-[50px] md:pb-[100px] lg:pb-0">{percentage}%</div>
         </div>
 
     );

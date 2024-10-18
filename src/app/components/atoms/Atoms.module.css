@@ -52,7 +52,7 @@
 .styledBurger div {
   width: 2rem;
   height: 0.2rem;
-  background: var(--burger-color);
+  background-color: white;
   border-radius: 10px;
   transition: all 0.3s linear;
   position: relative;
