@@ -32,7 +32,16 @@
 @media (min-width:767px){
 
   .innerContainer{
+    padding: 0 5vw;
+  }
+
+}
+
+@media (min-width:1024px){
+
+  .innerContainer{
     padding-left: 7.5vw;
+    padding-right: 0;
   }
 
 }

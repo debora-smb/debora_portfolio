@@ -37,23 +37,48 @@ const Slider = () => {
             key={index}
 
           >
-            <div className=' bg-cover h-full gap-4 bg-center flex flex-col justify-end ' style={{ backgroundImage: `url(${project.image})` }}
+            <div className=' bg-cover h-full gap-4 bg-x-center bg-y-top flex flex-col justify-end ' style={{ backgroundImage: `url(${project.image})` }}
             >
               <div className={`${style.info} flex flex-row items-center justify-center`}>
 
-                <div className='flex gap-11 justify-start px-4 w-full'>
-                  <h3 className='font-avenir text-white text-[30px] font-bold w-fit'>{project.name}</h3>
-                  <div className="flex justify-center space-x-4"> {/* Flex container for icons */}
+                <div className='flex gap-20 justify-start px-4 w-full items-center'>
+                  <h3 className='font-avenir text-white text-[20px] xl:text-[30px] font-bold w-fit'>{project.name}</h3>
+                  <div className="flex justify-center space-x-4">
+                  {project.github && (
+                    <a href={project.github}>
+                      <Image
+                        src="/img/icon-github.svg"
+                        alt="Github repository"
+                        width={30}
+                        height={30}
+                      />
+                    </a>
+                    )}
+                    {project.web && (
+                    <a href={project.web}>
+                      <Image
+                        src="/img/icon-web.svg"
+                        alt="Github repository"
+                        width={30}
+                        height={30}
+                      />
+                    </a>
+)}
+                  </div>
+                  
+                  <div className="flex justify-center space-x-2">
                     {project.technologies.map((techIcon, techIndex) => (
                       <Image
-                        key={techIndex} // Use techIndex as key since they are likely unique
+                        key={techIndex}
                         src={techIcon}
-                        alt={`Technology icon ${techIndex}`} // Alt text for accessibility
-                        width={40} // Set width for icons
-                        height={40} // Set height for icons
+                        alt={`Technology icon ${techIndex}`}
+                        width={30}
+                        height={30}
+                        
                       />
                     ))}
                   </div>
+ 
                 </div>
               </div>
             </div>
