@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import style from "./Molecules.module.css";
+import styles from "./Slider.module.css";
 import projects from "../../json/projects.json"
 import Image from 'next/image';
 
@@ -28,18 +28,18 @@ const Slider = () => {
 
 
   return (
-    <div className={style.slider}>
+    <div className={styles.slider}>
 
       <div className="w-full h-full">
         {projects.map((project, index) => (
           <div
-            className={`flex flex-col gap-4 ${style.slide} ${index === currentIndex ? style.active : ''}`}
+            className={`flex flex-col gap-4 ${styles.slide} ${index === currentIndex ? styles.active : ''}`}
             key={index}
 
           >
             <div className=' bg-cover h-full gap-4 bg-x-center bg-y-top flex flex-col justify-end ' style={{ backgroundImage: `url(${project.image})` }}
             >
-              <div className={`${style.info} flex flex-row items-center justify-center`}>
+              <div className={`${styles.info} flex flex-row items-center justify-center`}>
 
                 <div className='flex gap-20 justify-start px-4 w-full items-center'>
                   <h3 className='font-avenir text-white text-[20px] xl:text-[30px] font-bold w-fit'>{project.name}</h3>
@@ -85,8 +85,8 @@ const Slider = () => {
 
           </div>
         ))}
-        <div className={`${style.eraser} ${isAnimating ? style.active : ''}`} />
-        <div className={style.buttons_container}>
+        <div className={`${styles.eraser} ${isAnimating ? styles.active : ''}`} />
+        <div className={styles.buttons_container}>
 
 
 
@@ -104,7 +104,7 @@ const Slider = () => {
               height={40}
               src="/img/previous-icon.svg"
               alt="next"
-              className={style.next}
+              className={styles.next}
             />
           </button>
         </div>

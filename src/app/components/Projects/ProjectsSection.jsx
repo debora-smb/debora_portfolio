@@ -1,6 +1,6 @@
 
-import TitleLoop from "../components/TitleLoop";
-import Slider from "../components/Slider";
+import TitleLoop from "./TitleLoop";
+import Slider from "./Slider";
 
 export default function ProjectsSection() {
 

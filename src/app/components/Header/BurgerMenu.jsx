@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./Molecules.module.css";
+import styles from "./BurgerMenu.module.css";
 
 
 export default function Menu({ open, setOpen }) {

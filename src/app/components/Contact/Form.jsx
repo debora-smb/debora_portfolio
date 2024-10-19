@@ -2,7 +2,7 @@
 import { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import DucksAnimation from "./Ducks";
-import styles from "./Molecules.module.css";
+import styles from "./Form.module.css";
 
 export default function Form() {
   const refForm = useRef();
@@ -28,9 +28,9 @@ export default function Form() {
       return;
     }
 
-    const serviceId = "service_mrrxx3h";
-    const templateId = "template_inbdxkc";
-    const apiKey = "u3eTcSgbBKH4B5bbB";
+    const serviceId = process.env.REACT_APP_SERVICE_ID;
+    const templateId = process.env.REACT_APP_TEMPLATE_ID;
+    const apiKey = process.env.REACT_APP_EMAILJS_API_KEY;
 
     emailjs
       .sendForm(serviceId, templateId, refForm.current, apiKey)

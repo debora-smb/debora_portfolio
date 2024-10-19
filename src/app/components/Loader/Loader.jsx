@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import styles from './Atoms.module.css';
+import styles from './Loader.module.css';
 
 export default function Loader() {
     const [percentage, setPercentage] = useState(0);

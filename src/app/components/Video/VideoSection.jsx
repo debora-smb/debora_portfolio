@@ -1,7 +1,7 @@
-import styles from "./Organisms.module.css";
+import styles from "./VideoSection.module.css";
 import { motion } from 'framer-motion';
 import { useEffect, useState, useRef } from "react";
-import ScrollMouse from "../components/Scroll";
+import ScrollMouse from "./Scroll";
 
 export default function VideoSection() {
   const [showTitle, setShowTitle] = useState(true); 

@@ -1,14 +1,14 @@
 "use client"
-import VideoSection from "./components/sections/VideoSection";
-import ContactSection from "./components/sections/ContactSection";
+import VideoSection from "./components/Video/VideoSection";
+import ContactSection from "./components/Contact/ContactSection";
 import { useEffect, useState } from "react";
-import Loader from "./components/components/Loader";
-import HeaderDesktop from "./components/components/HeaderDesktop";
-import HeaderMobile from "./components/components/HeaderMobile";
-import ProjectsSection from "./components/sections/ProjectsSection";
-import AboutMeSection from "./components/sections/AboutMeSection";
-import Footer from "./components/components/Footer";
-import ToolsSection from "./components/sections/ToolsSection";
+import Loader from "./components/Loader/Loader";
+import HeaderDesktop from "./components/Header/HeaderDesktop";
+import HeaderMobile from "./components/Header/HeaderMobile";
+import ProjectsSection from "./components/Projects/ProjectsSection";
+import AboutMeSection from "./components/About Me/AboutMeSection";
+import Footer from "./components/Footer/Footer";
+import ToolsSection from "./components/Tools/ToolsSection";
 
 
 export default function SinglePageApp() {

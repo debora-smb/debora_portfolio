@@ -1,4 +1,4 @@
-import styles from './Atoms.module.css';
+import styles from './Burger.module.css';
 
 export default function Burger({ open, setOpen }){
   return (

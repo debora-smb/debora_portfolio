@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import styles from "./Organisms.module.css";
 import technologies from "../../json/technologies.json"
-import SkillsBar from "../components/SkillsBar";
+import SkillsBar from "./SkillsBar";
 
 
 export default function ToolsSection() {
@@ -46,11 +45,11 @@ export default function ToolsSection() {
         <SkillsBar scrollPosition={scrollPosition2} />
         <SkillsBar scrollPosition={scrollPosition3} />
       </section>
-      <section className={`${styles.technologies} flex font-avener text-[20px] leading-[20px] mt-8 gap-y-4 gap-x-6 items-center text-white justify-between flex-wrap md:mt-32 md:text-[30px] md:leading-[34px] md:gap-y-8 md:gap-x-12 lg:mt-8 lg:text-[24px] lg:leading-[28px] lg:gap-4  xl:gap-x-2 xl:mt-12 xl:gap-8 xl:text-[30px] xl:leading-[34px] 2xl:gap-8`}>
+      <section className={`flex font-avener text-[20px] leading-[20px] mt-8 gap-y-4 gap-x-6 items-center text-white justify-between flex-wrap md:mt-32 md:text-[30px] md:leading-[34px] md:gap-y-8 md:gap-x-12 lg:mt-8 lg:text-[24px] lg:leading-[28px] lg:gap-4  xl:gap-x-2 xl:mt-12 xl:gap-8 xl:text-[30px] xl:leading-[34px] 2xl:gap-8`}>
         {technologies.map((tech, index) => (
           <span
             key={index}
-            className="hover:text-[#f8b500]"
+            className="hover:text-[#ffcd46]"
           >
             {tech}
           </span>

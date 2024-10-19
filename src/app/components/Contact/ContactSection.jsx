@@ -1,5 +1,5 @@
 "use client";
-import Form from "../components/Form";
+import Form from "./Form";
 import { motion } from 'framer-motion';
 import { useEffect, useState, useRef } from "react";
 

@@ -1,4 +1,4 @@
-import styles from "./Atoms.module.css";
+import styles from "./TitleLoop.module.css";
 
 export default function TitleLoop() {
 

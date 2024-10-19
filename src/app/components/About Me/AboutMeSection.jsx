@@ -1,7 +1,6 @@
 import Image from "next/image";
-import styles from "./Organisms.module.css";
-import InfoAboutMe from "../components/InfoAboutMe";
-import FollowMe from "../components/FollowMe";
+import InfoAboutMe from "./InfoAboutMe";
+import FollowMe from "./FollowMe";
 
 export default function AboutMeSection() {
 

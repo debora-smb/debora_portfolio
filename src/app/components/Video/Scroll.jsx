@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import styles from "./Atoms.module.css";
+import styles from "./Scroll.module.css";
 
 export default function ScrollMouse() {
 

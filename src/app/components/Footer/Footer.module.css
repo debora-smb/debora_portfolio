@@ -1,0 +1,12 @@
+.footer {
+    letter-spacing: 3px;
+    transition: 0.5s linear;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  
+  .footer:hover {
+    letter-spacing: 7px;
+  }

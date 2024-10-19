@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import style from "./Atoms.module.css";
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   const [isVisible, setIsVisible] = useState(true);
@@ -15,7 +15,7 @@ export default function Footer() {
 
   return (
       <footer
-        className={` ${style.footer} text-white text-center font-avenir text-lg  p-8 w-full cursor-pointer lg:ml-[5vw]`}
+        className={` ${styles.footer} text-white text-center font-avenir text-lg  p-8 w-full cursor-pointer lg:ml-[5vw]`}
         onClick={handleBackToTop} 
       >
         BACK TO TOP
