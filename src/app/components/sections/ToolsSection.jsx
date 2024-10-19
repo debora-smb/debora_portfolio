@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Organisms.module.css";
 import technologies from "../../json/technologies.json"
-import SkillsBar from "../atoms/SkillsBar";
+import SkillsBar from "../components/SkillsBar";
 
 
 export default function ToolsSection() {

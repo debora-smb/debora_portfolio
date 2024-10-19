@@ -1,6 +1,6 @@
 
-import TitleLoop from "../atoms/TitleLoop";
-import Slider from "../molecules/Slider";
+import TitleLoop from "../components/TitleLoop";
+import Slider from "../components/Slider";
 
 export default function ProjectsSection() {
 

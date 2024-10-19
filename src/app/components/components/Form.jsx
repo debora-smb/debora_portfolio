@@ -1,7 +1,7 @@
 "use client"
 import { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import DucksAnimation from "../atoms/Ducks";
+import DucksAnimation from "./Ducks";
 import styles from "./Molecules.module.css";
 
 export default function Form() {

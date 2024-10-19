@@ -1,14 +1,14 @@
 "use client"
-import VideoSection from "./components/organisms/VideoSection";
-import ContactSection from "./components/organisms/ContactSection";
+import VideoSection from "./components/sections/VideoSection";
+import ContactSection from "./components/sections/ContactSection";
 import { useEffect, useState } from "react";
-import Loader from "./components/atoms/Loader";
-import HeaderDesktop from "./components/atoms/HeaderDesktop";
-import HeaderMobile from "./components/molecules/HeaderMobile";
-import ProjectsSection from "./components/organisms/ProjectsSection";
-import AboutMeSection from "./components/organisms/AboutMeSection";
-import Footer from "./components/atoms/Footer";
-import ToolsSection from "./components/organisms/ToolsSection";
+import Loader from "./components/components/Loader";
+import HeaderDesktop from "./components/components/HeaderDesktop";
+import HeaderMobile from "./components/components/HeaderMobile";
+import ProjectsSection from "./components/sections/ProjectsSection";
+import AboutMeSection from "./components/sections/AboutMeSection";
+import Footer from "./components/components/Footer";
+import ToolsSection from "./components/sections/ToolsSection";
 
 
 export default function SinglePageApp() {

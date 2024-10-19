@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./Organisms.module.css";
-import InfoAboutMe from "../molecules/InfoAboutMe";
-import FollowMe from "../molecules/FollowMe";
+import InfoAboutMe from "../components/InfoAboutMe";
+import FollowMe from "../components/FollowMe";
 
 export default function AboutMeSection() {
 
@@ -14,7 +14,7 @@ export default function AboutMeSection() {
                         <FollowMe />
                     </div>
                 </div>
-                <aside className="bg-yellow h-fit w-full lg:w-[45%]">
+                <aside className="bg-[#9ca6af] h-fit w-full lg:w-[45%]">
                     <Image
                         height={500}
                         width={750}
