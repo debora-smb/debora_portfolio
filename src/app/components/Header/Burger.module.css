@@ -1,0 +1,41 @@
+.styledBurger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1.8rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.styledBurger:focus {
+  outline: none;
+}
+
+.styledBurger div {
+  width: 2rem;
+  height: 0.2rem;
+  background-color: white !important;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.styledBurger div:first-child {
+  transform: var(--burger-transform-first-child);
+}
+
+.styledBurger div:nth-child(2) {
+  opacity: var(--burger-opacity-second-child);
+  transform: var(--burger-transform-second-child);
+}
+
+.styledBurger div:nth-child(3) {
+  transform: var(--burger-transform-third-child);
+}
+
+

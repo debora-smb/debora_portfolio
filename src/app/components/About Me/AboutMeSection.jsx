@@ -1,12 +1,6 @@
 import Image from "next/image";
-<<<<<<<< HEAD:src/app/components/organisms/AboutMeSection.jsx
-import styles from "./Organisms.module.css";
-import InfoAboutMe from "../molecules/InfoAboutMe";
-import FollowMe from "../molecules/FollowMe";
-========
 import InfoAboutMe from "./InfoAboutMe";
 import FollowMe from "./FollowMe";
->>>>>>>> a94fd5e (refactor: :building_construction: organize files by component names folder's):src/app/components/About Me/AboutMeSection.jsx
 
 export default function AboutMeSection() {
 
@@ -19,7 +13,7 @@ export default function AboutMeSection() {
                         <FollowMe />
                     </div>
                 </div>
-                <aside className="bg-yellow h-fit w-full lg:w-[45%]">
+                <aside className="bg-[#9ca6af] h-fit w-full lg:w-[45%]">
                     <Image
                         height={500}
                         width={750}

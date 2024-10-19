@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 100px;
+  }
+  
+  .list {
+    display: flex;
+    align-items: center;
+    animation: loop 35s infinite linear;
+  }
+  
+  .itemspace {
+    padding: 0 40px;
+  }
+  
+  .itemtxt,
+  .itemspace {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  @media (min-width: 767px) {
+    .itemtxt,
+    .itemspace {
+      font-size: 120px;
+    }
+  
+    .container {
+      height: 150px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .itemtxt,
+    .itemspace {
+      font-size: 80px;
+    }
+  }
+  
+  @keyframes loop {
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
