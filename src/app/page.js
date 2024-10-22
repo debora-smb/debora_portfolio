@@ -33,7 +33,7 @@ export default function SinglePageApp() {
       <HeaderDesktop />
       <HeaderMobile />
       <main>
-        <div className="fixed top-[10vh] left-0 h-[100vh] bg-black lg:top-0">
+        <div className="fixed top-[10vh] left-0 h-[100dvh] bg-black lg:top-0">
           <VideoSection />
         </div>
         <div className="relative top-[100dvh] h-[100vh] w-[100vw] z-10 lg:top-[100vh] lg:w-[85vw]">
