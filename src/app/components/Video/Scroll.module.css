@@ -3,7 +3,7 @@
 .scroll {
     z-index: 11;
     position: absolute;
-    bottom: 25vh;
+    bottom: 15dvh;
     right: 8vw;
     width: 35px;
     height: 60px;
@@ -36,7 +36,6 @@
   @media (min-width: 767px) {
     .scroll {
       right: 5vw;
-      bottom: 24vh;
     }
   }
   

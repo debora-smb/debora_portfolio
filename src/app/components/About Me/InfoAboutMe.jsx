@@ -35,7 +35,7 @@ export default function InfoAboutMe(){
 
     return (
         <>
-            <div className=" w-[265px] text-[18px] h-14  mt-20  md:h-[60px] md:w-full md:mt-32  md:text-[24px] lg:mt-0 lg:w-[370px] xl:h-fit xl:w-full " ref={typewriterRef}>
+            <div className="w-[265px] text-[18px] h-14  mt-20  md:h-[60px] md:w-full md:mt-32  md:text-[24px] lg:mt-0 lg:w-[370px] xl:h-fit xl:w-full " ref={typewriterRef}>
                 {showTypewriter && (
                     <Typewriter
                         options={{
@@ -54,7 +54,7 @@ export default function InfoAboutMe(){
                 )}
             </div>
 
-            <div className="h-[120px] md:h-[200px] md:flex md:flex-col justify-center items-center w-full gap-12">
+            <div className="h-[120px] md:h-[200px] md:flex md:flex-col lg:-mr-[200px] justify-center items-center w-full gap-12">
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={showTitle ? "animate" : "initial"} 
@@ -68,7 +68,7 @@ export default function InfoAboutMe(){
                             className={`text-[50px] leading-[50px] ml-6 relative z-20 md:-mt-34 md:ml-24 font-avenir md:text-[90px] md:leading-[100px] lg:text-[100px] text-grey`}
                         >
                             FRONTEND{" "}
-                            <span className="md:text-[110px] md:ml-36 text-[50px] leading-[50px] font-ivyPresto ml-16">
+                            <span className=" md:text-[110px] md:ml-36 xl:ml-48 text-[50px] leading-[50px] lg:text-[90px] xl:text-[110px] font-ivyPresto ml-16">
                                 DEVELOPER
                             </span>
                         </span>
