@@ -13,13 +13,13 @@ export default function AboutMeSection() {
                         <FollowMe />
                     </div>
                 </div>
-                <aside className="bg-[#9ca6af] h-fit w-full lg:w-[45%]">
+                <aside className="bg-[#9ca6af] h-fit w-[80%] md:w-full lg:w-[45%]">
                     <Image
                         height={500}
                         width={750}
                         src="/img/DSC_05601.webp"
                         alt="Débora Menezes"
-                        className="h-[300px] w-full object-cover md:h-[500px] lg:h-[75vh] xl:h-[80vh]"
+                        className="h-[250px] w-full object-cover md:h-[500px] lg:h-[75vh] xl:h-[80vh]"
                     />
                 </aside>
                 <div className="flex w-full lg:hidden">

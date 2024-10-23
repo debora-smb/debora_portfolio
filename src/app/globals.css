@@ -6,14 +6,14 @@
 
 @font-face {
   font-family: 'AvenirLight';
-  src: url('/fonts/Avenir-Light.ttf') format('truetype');
+  src: url('/assets/fonts/Avenir-Light.ttf') format('truetype');
   font-weight: light;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IvyPrestoDisplay';
-  src: url('/fonts/Ivy-Presto-Display-Light.otf') format('opentype');
+  src: url('/assets/fonts/Ivy-Presto-Display-Light.otf') format('opentype');
   font-weight: italic;
   font-style: normal;
 }
