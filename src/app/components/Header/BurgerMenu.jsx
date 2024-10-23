@@ -17,18 +17,20 @@ export default function Menu({ open, setOpen }) {
                 follow me
                 <a href="https://github.com/debora-smb" target="_blank" rel="noopener noreferrer">
                     <Image
-                        width={25}
-                        height={25}
-                        src='/img/icon-github.svg'
+                        width={40}
+                        height={40}
+                        src='/assets/icons/icon-github.svg'
                         alt="GitHub"
+                        className="w-[30px] md:w-10"
                     />
                 </a>
                 <a href="https://www.linkedin.com/in/debora-smenezes" target="_blank" rel="noopener noreferrer">
                     <Image
-                        width={25}
-                        height={25}
-                        src='/img/icon-linkedin.svg'
+                        width={40}
+                        height={40}
+                        src='/assets/icons/icon-linkedin.svg'
                         alt="LinkedIn"
+                        className="w-[30px] md:w-10"
                     />
                 </a>
             </div>

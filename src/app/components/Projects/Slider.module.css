@@ -51,13 +51,11 @@
 }
 
 .buttons_container {
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
+position: absolute;
 	gap: 20px;
-  z-index:999;
+	bottom:0;
+	right:0;
 display: flex; 
-  
 }
 
 .buttons_container button {
