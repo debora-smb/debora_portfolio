@@ -36,7 +36,6 @@ export default function Form() {
     const serviceId = process.env.REACT_APP_SERVICE_ID;
     const templateId = process.env.REACT_APP_TEMPLATE_ID;
     const apiKey = process.env.REACT_APP_EMAILJS_API_KEY;
-    
 
     emailjs
       .sendForm(serviceId, templateId, refForm.current, apiKey)

@@ -1,0 +1,245 @@
+/* HEADER  */
+.nav a{
+	display: flex;
+  align-items:center;
+  justify-content: center;
+  height: 120px;
+}
+
+
+.letter, .letterFixed {
+	display: inline-flex;
+	height: 12px;
+	width: 12px;
+	border: 1px solid white;
+	border-radius: 14px;
+	transition: 0.5s ease-in-out ;
+}
+
+
+.nav a:hover .letter{
+	height: 25px;
+}
+
+
+@media (min-width: 1024px) {
+  .nav {
+    writing-mode: vertical-rl;
+  }
+}
+
+
+
+/* BURGER  */
+
+.styledBurger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1.8rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.styledBurger:focus {
+  outline: none;
+}
+
+.styledBurger div {
+  width: 2rem;
+  height: 0.2rem;
+  background-color: white !important;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .styledBurger div {
+    background-color: #fff;
+  }
+}
+
+.styledBurger div:first-child {
+  transform: var(--burger-transform-first-child);
+}
+
+.styledBurger div:nth-child(2) {
+  opacity: var(--burger-opacity-second-child);
+  transform: var(--burger-transform-second-child);
+}
+
+.styledBurger div:nth-child(3) {
+  transform: var(--burger-transform-third-child);
+}
+
+
+/* LOADER  */
+
+.portfolioName {
+  animation: fadeInOut 1s ease-in-out;
+  -webkit-text-stroke: #111;
+}
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/* SCROLL */
+
+
+
+
+.scroll {
+  z-index: 11;
+  position: absolute;
+  bottom: 25vh;
+  right: 8vw;
+  width: 35px;
+	height: 60px;
+	border: 3px solid #fff !important;
+	border-radius: 60px;
+}
+
+
+	.scroll:before {
+    content: '';
+		width: 8px;
+		height: 8px;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #fff !important;
+		border-radius: 50%;
+		opacity: 1;
+		animation: wheel 2s infinite;
+		-webkit-animation: wheel 2s infinite;
+	}
+
+
+  @keyframes wheel {
+    to {
+      opacity: 0;
+      top: 40px;
+    }
+  }
+
+  
+  @media (min-width:767px) {
+    .scroll {
+      right: 5vw;
+      bottom:24vh;
+    }
+  }
+
+  @media (min-width:1024px) {
+    .scroll {
+      right: 30px;
+      bottom:30px;
+    }
+  }
+ 
+/* SKILLS BAR */
+
+.barfill {
+  transition: width 0.1s ease-in-out;
+}
+
+
+/* FOOTER */
+.footer {
+  letter-spacing: 3px;
+  transition: 0.5s linear;
+  user-select: none; 
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+}
+
+.footer:hover {
+  letter-spacing: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+.container {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 100px;
+
+  
+
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  animation: loop 35s infinite linear;
+}
+
+.itemspace {
+  padding: 0 40px;
+}
+
+.itemtxt,
+.itemspace {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (min-width:767px){
+  
+.itemtxt,
+.itemspace {
+  font-size: 120px;
+}
+
+.container {
+  height: 150px;
+
+
+}
+}
+
+@media (min-width:1024px){
+  
+  .itemtxt,
+  .itemspace {
+    font-size: 80px;
+  }
+  }
+
+
+@keyframes loop {
+  100% {
+    transform: translateX(-100%);
+  }
+}
