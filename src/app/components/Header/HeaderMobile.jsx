@@ -1,5 +1,9 @@
 import { useEffect, useRef, useState } from "react";
+<<<<<<< HEAD
 import Burger from "../atoms/Burger";
+=======
+import Burger from "./Burger";
+>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd
 import Menu from "./BurgerMenu";
 
 

@@ -65,7 +65,11 @@ export default function InfoAboutMe(){
                 >
                     {showTitle && (
                         <span
+<<<<<<< HEAD
                             className={`text-[50px] leading-[50px] ml-6 relative z-20 md:-mt-34 md:ml-24 font-avenir md:text-[90px] md:leading-[100px] lg:text-[100px] text-grey`}
+=======
+                            className={` text-[50px] leading-[50px] ml-6 relative z-[9999] md:-mt-34 md:ml-24 font-avenir md:text-[90px] md:leading-[100px] lg:text-[80px] xl:text-[100px] text-yellow`}
+>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd
                         >
                             FRONTEND{" "}
                             <span className=" md:text-[110px] md:ml-36 xl:ml-48 text-[50px] leading-[50px] lg:text-[90px] xl:text-[110px] font-ivyPresto ml-16">

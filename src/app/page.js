@@ -1,5 +1,6 @@
 "use client"
 <<<<<<< HEAD
+<<<<<<< HEAD
 import VideoSection from "./components/organisms/VideoSection";
 import ContactSection from "./components/organisms/ContactSection";
 import { useEffect, useState } from "react";
@@ -14,6 +15,11 @@ import ToolsSection from "./components/organisms/ToolsSection";
 import VideoSection from "./components/Video/VideoSection";
 import ContactSection from "./components/Contact/ContactSection";
 import { useEffect, useState } from "react";
+=======
+import VideoSection from "./components/Video/VideoSection";
+import ContactSection from "./components/Contact/ContactSection";
+import { useEffect, useState } from "react";
+>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd
 import Loader from "./components/Loader/Loader";
 import HeaderDesktop from "./components/Header/HeaderDesktop";
 import HeaderMobile from "./components/Header/HeaderMobile";
@@ -21,7 +27,10 @@ import ProjectsSection from "./components/Projects/ProjectsSection";
 import AboutMeSection from "./components/About Me/AboutMeSection";
 import Footer from "./components/Footer/Footer";
 import ToolsSection from "./components/Tools/ToolsSection";
+<<<<<<< HEAD
 >>>>>>> a94fd5e (refactor: :building_construction: organize files by component names folder's)
+=======
+>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd
 
 
 export default function SinglePageApp() {

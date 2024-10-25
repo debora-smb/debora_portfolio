@@ -2,12 +2,23 @@
 import { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 <<<<<<<< HEAD:src/app/components/molecules/Form.jsx
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:src/app/components/molecules/Form.jsx
+>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd
 import DucksAnimation from "../atoms/Ducks";
 import styles from "./Molecules.module.css";
 ========
 import DucksAnimation from "./Ducks";
 import styles from "./Form.module.css";
 >>>>>>>> a94fd5e (refactor: :building_construction: organize files by component names folder's):src/app/components/Contact/Form.jsx
+<<<<<<< HEAD
+=======
+========
+import DucksAnimation from "./Ducks";
+import styles from "./Form.module.css";
+>>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd:src/app/components/Contact/Form.jsx
+>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd
 
 export default function Form() {
   const refForm = useRef();
@@ -36,7 +47,14 @@ export default function Form() {
     const serviceId = process.env.REACT_APP_SERVICE_ID;
     const templateId = process.env.REACT_APP_TEMPLATE_ID;
     const apiKey = process.env.REACT_APP_EMAILJS_API_KEY;
+<<<<<<< HEAD
     
+=======
+<<<<<<<< HEAD:src/app/components/molecules/Form.jsx
+========
+    
+>>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd:src/app/components/Contact/Form.jsx
+>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd
 
     emailjs
       .sendForm(serviceId, templateId, refForm.current, apiKey)

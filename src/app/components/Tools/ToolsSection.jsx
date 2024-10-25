@@ -1,10 +1,20 @@
 import { useEffect, useRef, useState } from "react";
 import technologies from "../../json/technologies.json"
 <<<<<<<< HEAD:src/app/components/organisms/ToolsSection.jsx
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:src/app/components/organisms/ToolsSection.jsx
+>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd
 import SkillsBar from "../atoms/SkillsBar";
 ========
 import SkillsBar from "./SkillsBar";
 >>>>>>>> a94fd5e (refactor: :building_construction: organize files by component names folder's):src/app/components/Tools/ToolsSection.jsx
+<<<<<<< HEAD
+=======
+========
+import SkillsBar from "./SkillsBar";
+>>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd:src/app/components/Tools/ToolsSection.jsx
+>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd
 
 
 export default function ToolsSection() {

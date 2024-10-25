@@ -1,9 +1,19 @@
 "use client";
 <<<<<<<< HEAD:src/app/components/organisms/ContactSection.jsx
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:src/app/components/organisms/ContactSection.jsx
+>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd
 import Form from "../molecules/Form";
 ========
 import Form from "./Form";
 >>>>>>>> a94fd5e (refactor: :building_construction: organize files by component names folder's):src/app/components/Contact/ContactSection.jsx
+<<<<<<< HEAD
+=======
+========
+import Form from "./Form";
+>>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd:src/app/components/Contact/ContactSection.jsx
+>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd
 import { motion } from 'framer-motion';
 import { useEffect, useState, useRef } from "react";
 

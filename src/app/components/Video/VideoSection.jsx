@@ -2,10 +2,20 @@ import styles from "./VideoSection.module.css";
 import { motion } from 'framer-motion';
 import { useEffect, useState, useRef } from "react";
 <<<<<<<< HEAD:src/app/components/organisms/VideoSection.jsx
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:src/app/components/organisms/VideoSection.jsx
+>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd
 import ScrollMouse from "../atoms/Scroll";
 ========
 import ScrollMouse from "./Scroll";
 >>>>>>>> a94fd5e (refactor: :building_construction: organize files by component names folder's):src/app/components/Video/VideoSection.jsx
+<<<<<<< HEAD
+=======
+========
+import ScrollMouse from "./Scroll";
+>>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd:src/app/components/Video/VideoSection.jsx
+>>>>>>> 771fb8b6f2d617d91b6578e647550328f1e020fd
 
 export default function VideoSection() {
   const [showTitle, setShowTitle] = useState(true); 
