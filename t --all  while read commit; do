@@ -1,0 +1,65 @@
+[33mcommit 575d6e3369d526c1184f5274a37a0e6a5ce70b73[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature_contact_section[m[33m, [m[1;31morigin/feature_contact_section[m[33m)[m
+Author: debora-smb <debora.smb@gmail.com>
+Date:   Fri Oct 25 17:25:28 2024 +0200
+
+    style: :lipstick: change bg color of input selected
+
+[33mcommit a94fd5ebbbf971712c2b0afa74b25de759add307[m
+Author: debora-smb <debora.smb@gmail.com>
+Date:   Sat Oct 19 19:44:31 2024 +0200
+
+    refactor: :building_construction: organize files by component names folder's
+
+[33mcommit 1f51e6b2c4712b669c6018a9b5c132aa334b8d43[m
+Author: debora-smb <debora.smb@gmail.com>
+Date:   Sat Oct 19 17:58:28 2024 +0200
+
+    style: :building_construction: change folders organization
+
+[33mcommit 55b64edcb5b5a904931b6d74ae0a14be98b6ee8b[m
+Author: debora-smb <debora.smb@gmail.com>
+Date:   Wed Oct 16 17:37:09 2024 +0200
+
+    feat: :sparkles: implement delay-based spam prevention for form submissions
+
+[33mcommit a6dde6eec46a2dc24844b603d964b61f615fd4a9[m
+Author: debora-smb <debora.smb@gmail.com>
+Date:   Wed Oct 9 18:19:37 2024 +0200
+
+    style: :lipstick: update contact section style
+
+[33mcommit b5e9f61be38c1ff854fa80498d1a4d7ed4aae302[m
+Author: debora-smb <debora.smb@gmail.com>
+Date:   Mon Sep 30 14:41:10 2024 +0200
+
+    fix: :bug: fix form returning to initial state after sending message successfully
+
+[33mcommit 152cc6ec2d63c4bc2df78ba41b88c2ffa275fb7f[m
+Author: debora-smb <debora.smb@gmail.com>
+Date:   Mon Sep 30 13:53:46 2024 +0200
+
+    refactor: :art: refactor ducks animation, and create ducks component
+
+[33mcommit db22821b78d66c5bba3fe5061471b6541b271ba1[m
+Author: debora-smb <debora.smb@gmail.com>
+Date:   Sat Aug 17 01:27:39 2024 +0200
+
+    feat: :sparkles: add contact title animation, update mobile version of contact section
+
+[33mcommit 8192fc554522a55355c5ce0c95255bfbd0871bf5[m[33m ([m[1;31morigin/feature_structure[m[33m, [m[1;32mfeature_structure[m[33m)[m
+Author: debora-smb <debora.smb@gmail.com>
+Date:   Fri Aug 16 17:03:11 2024 +0200
+
+    feat: :art: organize folders structure, update video section component  and tailwind config
+
+[33mcommit 16568978ba8632c8f84a1a1ab4b46a3d8e18cdf2[m
+Author: debora-smb <debora.smborges@gmail.com>
+Date:   Tue Jul 2 21:17:02 2024 +0200
+
+    fix: :bug: fix image route
+
+[33mcommit dc97efa7d47a27431f1a9b293a0dde45c0c55f87[m
+Author: debora-smb <debora.smborges@gmail.com>
+Date:   Tue Jul 2 21:09:25 2024 +0200
+
+    feat: :sparkles: add contact section and install emailjs
