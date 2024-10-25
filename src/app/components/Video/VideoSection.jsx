@@ -1,11 +1,7 @@
 import styles from "./VideoSection.module.css";
 import { motion } from 'framer-motion';
 import { useEffect, useState, useRef } from "react";
-<<<<<<<< HEAD:src/app/components/organisms/VideoSection.jsx
-import ScrollMouse from "../atoms/Scroll";
-========
 import ScrollMouse from "./Scroll";
->>>>>>>> a94fd5e (refactor: :building_construction: organize files by component names folder's):src/app/components/Video/VideoSection.jsx
 
 export default function VideoSection() {
   const [showTitle, setShowTitle] = useState(true); 

@@ -5,8 +5,8 @@ import FollowMe from "./FollowMe";
 export default function AboutMeSection() {
 
     return (
-        <div className="bg-black w-[100vw] h-[100dvh] lg:pr-0 lg:w-[85vw]" id="about-me">
-            <div className={`innerContainer w-full gap-4 h-[100dvh] flex flex-col justify-center items-center md:gap-12 lg:flex-row`}>
+        <div className="bg-black w-[100vw] h-[100vh] lg:pr-0 lg:w-[85vw]" id="about-me">
+            <div className={`innerContainer w-full gap-4 h-[100vh] flex flex-col justify-center items-center md:gap-12 lg:flex-row`}>
                 <div className="text-white text-[26px] w-full lg:w-[54%] leading-[30px] flex flex-col gap-4 lg:gap-12 xl:gap-20 ">
                     <InfoAboutMe />
                     <div className="hidden lg:flex">

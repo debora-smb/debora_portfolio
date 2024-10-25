@@ -1,13 +1,8 @@
 "use client"
 import { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-<<<<<<<< HEAD:src/app/components/molecules/Form.jsx
-import DucksAnimation from "../atoms/Ducks";
-import styles from "./Molecules.module.css";
-========
 import DucksAnimation from "./Ducks";
 import styles from "./Form.module.css";
->>>>>>>> a94fd5e (refactor: :building_construction: organize files by component names folder's):src/app/components/Contact/Form.jsx
 
 export default function Form() {
   const refForm = useRef();

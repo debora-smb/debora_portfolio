@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import Burger from "../atoms/Burger";
 import Menu from "./BurgerMenu";
+import Burger from "./Burger";
 
 
 export default function HeaderMobile(){

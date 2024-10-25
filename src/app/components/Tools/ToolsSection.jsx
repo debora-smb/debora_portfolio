@@ -1,10 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import technologies from "../../json/technologies.json"
-<<<<<<<< HEAD:src/app/components/organisms/ToolsSection.jsx
-import SkillsBar from "../atoms/SkillsBar";
-========
 import SkillsBar from "./SkillsBar";
->>>>>>>> a94fd5e (refactor: :building_construction: organize files by component names folder's):src/app/components/Tools/ToolsSection.jsx
 
 
 export default function ToolsSection() {

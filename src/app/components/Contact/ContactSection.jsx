@@ -1,9 +1,5 @@
 "use client";
-<<<<<<<< HEAD:src/app/components/organisms/ContactSection.jsx
-import Form from "../molecules/Form";
-========
 import Form from "./Form";
->>>>>>>> a94fd5e (refactor: :building_construction: organize files by component names folder's):src/app/components/Contact/ContactSection.jsx
 import { motion } from 'framer-motion';
 import { useEffect, useState, useRef } from "react";
 
