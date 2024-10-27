@@ -1,19 +1,59 @@
 [
       {
         "id":0,
-        "name": "Usuless Facts",
-        "github": "https://github.com/annaLucian/toquen-el-dom" ,
-        "web": "https://github.com/annaLucian/toquen-el-dom",
-        "image": "/img/placeholder-proyecto.png",
-        "technologies": ["/assets/icons/icon-tailwind.svg", "/assets/icons/icon-php.svg","/assets/icons/icon-tailwind.svg", "/assets/icons/icon-php.svg"]
+        "name": "Dating Lab",
+        "github": "https://github.com/orgs/FemCodersP4/repositories",
+        "web": "https://datinglab.es/",
+        "image": "dating-lab.gif",
+        "technologies": ["react", "next", "tailwind", "jest", "axios" , "laravel", "php-unit", "mysql"]
       },
       {
         "id":1,
-        "name": "FemMusica",
-        "github": "https://github.com/annaLucian/toquen-el-dom",
+        "name": "DreamScape",
+        "github": "https://github.com/debora-smb/DreamScape",
         "web": null,
-        "image": "/img/placeholder-proyecto.png",
-        "technologies": ["/assets/icons/icon-tailwind.svg", "/assets/icons/icon-php.svg","/assets/icons/icon-tailwind.svg", "/assets/icons/icon-php.svg"]
+        "image": "dreamscape.webp",
+        "technologies": ["react", "next", "tailwind", "material-ui" , "laravel", "cypress","vitest", "axios", "mysql" ]
+      },
+      {
+        "id":2,
+        "name": "Usuless Facts",
+        "github":"https://github.com/debora-smb/Useless-facts" ,
+        "web": null,
+        "image": "useless-facts.gif",
+        "technologies": ["react", "next", "css", "rest-api", "vitest"]
+      },
+      {
+        "id":3,
+        "name": "FemMusica",
+        "github": "https://github.com/debora-smb/toquen-el-dom" ,
+        "web": null,
+        "image": "fem-musica.gif",
+        "technologies": ["html", "css", "javascript" , "vitest" ]
+      },
+      {
+        "id":4,
+        "name": "4Cadires",
+        "github": null,
+        "web": "www.4cadires.com",
+        "image": "4cadires.gif",
+        "technologies": ["wordpress","jquery", "ajax", "acf", "elementor"]
+      },
+      {
+        "id":5,
+        "name": "The Library Book",
+        "github":"https://github.com/debora-smb/The-Library-book",
+        "web": null,
+        "image": "the-library-book.gif",
+        "technologies": ["php", "html", "css", "composer", "php-unit", "mysql"]
+      },
+      {
+        "id":6,
+        "name": "Mystic Sakura",
+        "github": "https://github.com/debora-smb/mystic-sakura",
+        "web": null,
+        "image": "mystic-sakura.gif",
+        "technologies": ["react", "next", "cypress", "jest", "json-server" , "rest-api", "tailwind"]
       }
     ]
   

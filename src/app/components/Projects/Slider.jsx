@@ -41,7 +41,7 @@ const Slider = () => {
               <Image
                 height={600}
                 width={500}
-                src={project.image}
+                src={`/img/${project.image}`}
                 className="object-cover w-[68%] md:w-[49dvw] lg:w-[34%] pt-[3%] lg:pt-[1%] absolute"
               />
 
@@ -49,7 +49,7 @@ const Slider = () => {
                 height={800}
                 width={650}
                 src="/img/laptop-frame.webp"
-                className="relative z-40 top-0 w-full md:w-[80%] lg:w-full"
+                className="relative z-40 top-0 w-full md:w-[80%] lg:w-full h-auto"
               />
             </div>
 
@@ -61,28 +61,28 @@ const Slider = () => {
                   {project.name}
                 </h3>
 
-                <div className="flex justify-center space-x-2">
+                <div className="flex justify-center space-x-2 xl:space-x-6">
                   {project.technologies.map((techIcon, techIndex) => (
                     <Image
                       key={techIndex}
-                      src={techIcon}
+                      src={`/assets/icons/icon-${techIcon}.svg`}
                       alt={`Technology icon ${techIndex}`}
                       width={40}
                       height={40}
-                      className="w-[30px] md:w-10"
+                      className="w-[28px] md:w-10 h-auto"
                     />
                   ))}
                 </div>
                 <div className="flex flex-row items-center justify-between mt-8 xl:mt-14 relative">
                   <div className="flex lg:justify-center space-x-8">
-                    {project.github && (
+                  {project.github && (
                       <a href={project.github}>
                         <Image
                           src="/assets/icons/icon-github.svg"
                           alt="Github repository"
                           width={40}
                           height={40}
-                          className="w-[30px] md:w-10"
+                          className="w-[30px] md:w-10 h-auto"
                         />
                       </a>
                     )}
@@ -93,7 +93,7 @@ const Slider = () => {
                           alt="Github repository"
                           width={40}
                           height={40}
-                          className="w-[30px] md:w-10"
+                          className="w-[30px] md:w-10 h-auto"
                         />
                       </a>
                     )}
@@ -105,7 +105,7 @@ const Slider = () => {
                         height={40}
                         src="/assets/icons/previous-icon.svg"
                         alt="previous"
-                        className="w-[30px] md:w-10"
+                        className="w-[30px] md:w-10 h-auto"
                       />
                     </button>
                     <button onClick={nextSlide}>
@@ -114,7 +114,7 @@ const Slider = () => {
                         height={40}
                         src="/assets/icons/previous-icon.svg"
                         alt="next"
-                        className={`${styles.next} w-[30px] md:w-10`}
+                        className={`${styles.next} w-[30px] md:w-10 h-auto`}
 
                       />
                     </button>
