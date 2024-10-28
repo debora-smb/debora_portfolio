@@ -38,12 +38,10 @@ const Slider = () => {
             key={index}
           >
             <div className="w-full lg:w-1/2 h-fit flex justify-center">
-              <Image
-                height={600}
-                width={500}
-                src={`/img/${project.image}`}
-                className="object-cover w-[68%] md:w-[49dvw] lg:w-[34%] pt-[3%] lg:pt-[1%] absolute"
-              />
+                <video autoPlay loop muted className="object-cover w-[68%] md:w-[49dvw] lg:w-[34%] pt-[3%] lg:pt-[1%] absolute">
+                <source src={`/video/${project.video}.mp4`} type="video/mp4" />
+              </video>
+              
 
               <Image
                 height={800}

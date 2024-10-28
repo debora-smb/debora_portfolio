@@ -4,7 +4,7 @@
         "name": "Dating Lab",
         "github": "https://github.com/orgs/FemCodersP4/repositories",
         "web": "https://datinglab.es/",
-        "image": "dating-lab.gif",
+        "video": "dating-lab",
         "technologies": ["react", "next", "tailwind", "jest", "axios" , "laravel", "php-unit", "mysql"]
       },
       {
@@ -12,7 +12,7 @@
         "name": "DreamScape",
         "github": "https://github.com/debora-smb/DreamScape",
         "web": null,
-        "image": "dreamscape.webp",
+        "video": "dreamscape",
         "technologies": ["react", "next", "tailwind", "material-ui" , "laravel", "cypress","vitest", "axios", "mysql" ]
       },
       {
@@ -20,7 +20,7 @@
         "name": "Usuless Facts",
         "github":"https://github.com/debora-smb/Useless-facts" ,
         "web": null,
-        "image": "useless-facts.gif",
+        "video": "useless-facts",
         "technologies": ["react", "next", "css", "rest-api", "vitest"]
       },
       {
@@ -28,7 +28,7 @@
         "name": "FemMusica",
         "github": "https://github.com/debora-smb/toquen-el-dom" ,
         "web": null,
-        "image": "fem-musica.gif",
+        "video": "fem-musica",
         "technologies": ["html", "css", "javascript" , "vitest" ]
       },
       {
@@ -36,7 +36,7 @@
         "name": "4Cadires",
         "github": null,
         "web": "www.4cadires.com",
-        "image": "4cadires.gif",
+        "video": "4cadires",
         "technologies": ["wordpress","jquery", "ajax", "acf", "elementor"]
       },
       {
@@ -44,7 +44,7 @@
         "name": "The Library Book",
         "github":"https://github.com/debora-smb/The-Library-book",
         "web": null,
-        "image": "the-library-book.gif",
+        "video": "the-library-book",
         "technologies": ["php", "html", "css", "composer", "php-unit", "mysql"]
       },
       {
@@ -52,7 +52,7 @@
         "name": "Mystic Sakura",
         "github": "https://github.com/debora-smb/mystic-sakura",
         "web": null,
-        "image": "mystic-sakura.gif",
+        "video": "mystic-sakura",
         "technologies": ["react", "next", "cypress", "jest", "json-server" , "rest-api", "tailwind"]
       }
     ]
