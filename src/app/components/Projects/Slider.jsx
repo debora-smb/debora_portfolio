@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Slider.module.css";
 import projects from "../../json/projects.json";
 import Image from "next/image";
@@ -6,6 +6,7 @@ import Image from "next/image";
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   const nextSlide = () => {
     if (isAnimating) return;
@@ -27,6 +28,27 @@ const Slider = () => {
     }, 500);
   };
 
+
+  const handleScroll = () => {
+      const videoElement = document.getElementById('lazyVideo');
+      if (videoElement) {
+          const rect = videoElement.getBoundingClientRect();
+          const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+          // Verifica si el video está dentro de la ventana visible
+          if (rect.top <= windowHeight && rect.bottom >= 0) {
+              setIsVisible(true);
+              window.removeEventListener('scroll', handleScroll); // Desactiva el evento una vez que se carga
+          }
+      }
+  };
+
+  useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+          window.removeEventListener('scroll', handleScroll);
+      };
+  }, []);
+
   return (
     <div className={styles.slider}>
       <div className="w-full h-full">
@@ -38,9 +60,19 @@ const Slider = () => {
             key={index}
           >
             <div className="w-full lg:w-1/2 h-fit flex justify-center">
-                <video autoPlay loop muted className="object-cover w-[68%] md:w-[49dvw] lg:w-[34%] pt-[3%] lg:pt-[1%] absolute">
+            <video 
+            id="lazyVideo" 
+            autoPlay 
+            loop 
+            muted 
+            className="object-cover w-[68%] md:w-[49dvw] lg:w-[34%] pt-[3%] lg:pt-[1%] absolute"
+            style={{ display: isVisible ? 'block' : 'none' }} 
+        >
+            {isVisible && (
                 <source src={`/video/${project.video}.mp4`} type="video/mp4" />
-              </video>
+            )}
+            Tu navegador no soporta el video.
+        </video>
               
 
               <Image
