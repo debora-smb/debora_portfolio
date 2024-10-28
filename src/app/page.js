@@ -15,10 +15,15 @@ export default function SinglePageApp() {
 
   const [loading, setLoading] = useState(true);
 
+  const handleVideoLoaded = () => {
+    setLoading(false);
+  };
+
   useEffect(() => {
+  
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -27,14 +32,13 @@ export default function SinglePageApp() {
     return <Loader />;
   }
 
-
   return (
     <>
       <HeaderDesktop />
       <HeaderMobile />
       <main>
         <div className="fixed top-[10vh] left-0 h-[100dvh] bg-black lg:top-0">
-          <VideoSection />
+          <VideoSection onLoaded={handleVideoLoaded} />
         </div>
         <div className="relative top-[100dvh] h-[100vh] w-[100vw] z-10 lg:top-[100vh] lg:w-[85vw]">
           <div className="overflow-hidden h-[10vh] lg:h-[40vh]">
