@@ -3,16 +3,16 @@ import { motion } from 'framer-motion';
 import { useEffect, useState, useRef } from "react";
 import ScrollMouse from "./Scroll";
 
-export default function VideoSection({ onLoaded }) {
+export default function VideoSection() {
   const [showTitle, setShowTitle] = useState(true); 
   const titleRef = useRef(null);
 
   return (
     <>
-      <video autoPlay loop muted onLoadedData={onLoaded} className="h-[100vh] w-[85vw] object-cover object-center hidden lg:flex">
+      <video autoPlay loop muted poster="/img/video_poster.webp" className="h-[100vh] w-[85vw] object-cover object-center hidden lg:flex">
         <source src="/video/hero_home_video_desktop.mp4" type="video/mp4" />
       </video>
-      <video autoPlay loop muted onLoadedData={onLoaded} className="h-[90dvh] w-[100vw] object-cover object-center dark:border-black border-black border-[20px] border-t-[0px] md:border-[20px] md:border-t-[0px] lg:hidden lg:border-[20px] lg:border-r-0" >
+      <video autoPlay loop muted poster="/img/video_poster.webp" className="h-[90dvh] w-[100vw] object-cover object-center dark:border-black border-black border-[20px] border-t-[0px] md:border-[20px] md:border-t-[0px] lg:hidden lg:border-[20px] lg:border-r-0" >
         <source src="/video/hero_home_video_mobile.mp4" type="video/mp4" />
       </video>
       <div className={`innerContainer flex  justify-center h-full w-[100vw] lg:w-[85vw]`}>
