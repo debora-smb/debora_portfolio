@@ -106,7 +106,7 @@ const Slider = () => {
                 <div className="flex flex-row items-center justify-between mt-8 xl:mt-14 relative">
                   <div className="flex lg:justify-center space-x-8">
                   {project.github && (
-                      <a href={project.github}>
+                      <a href={project.github} target="_blank">
                         <Image
                           src="/assets/icons/icon-github.svg"
                           alt="Github repository"
@@ -117,7 +117,7 @@ const Slider = () => {
                       </a>
                     )}
                     {project.web && (
-                      <a href={project.web}>
+                      <a href={project.web} target="_blank">
                         <Image
                           src="/assets/icons/icon-web.svg"
                           alt="Github repository"

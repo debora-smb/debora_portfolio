@@ -35,7 +35,7 @@
         "id":4,
         "name": "4Cadires",
         "github": null,
-        "web": "www.4cadires.com",
+        "web": "https://4cadires.com",
         "video": "4cadires",
         "technologies": ["wordpress","jquery", "ajax", "acf", "elementor"]
       },
